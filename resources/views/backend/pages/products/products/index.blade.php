@@ -15,12 +15,6 @@
                                 <h2 class="h5 mb-lg-0">{{ localize('Products') }}</h2>
                             </div>
                             <div class="tt-action">
-                                {{-- <a href="{{ route('admin.products.export') }}" class="btn btn-danger"> <i
-                                        data-feather="download"></i> {{ localize('Export') }}</a>
-
-                                <button class="btn btn-primary import"> <i data-feather="upload"></i>
-                                    {{ localize('Import') }}</button> --}}
-
                                 @can('add_products')
                                     <a href="{{ route('admin.products.create') }}" class="btn btn-primary"><i
                                             data-feather="plus"></i> {{ localize('Add Product') }}</a>
@@ -50,20 +44,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    {{-- <div class="col-auto">
-                                        <div class="input-group">
-                                            <select class="form-select select2" name="brand_id">
-                                                <option value="">{{ localize('Select Brand') }}</option>
-                                                @foreach ($brands as $brand)
-                                                    <option value="{{ $brand->id }}"
-                                                        @isset($brand_id)
-                                                         @if ($brand_id == $brand->id) selected @endif
-                                                        @endisset>
-                                                        {{ $brand->collectLocalization('name') }}</option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                    </div> --}}
                                     <div class="col-auto">
                                         <div class="input-group">
                                             <select class="form-select select2" name="is_published"

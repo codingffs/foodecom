@@ -108,9 +108,9 @@
                                 @endif
                             </tr>
                             @foreach ($orderItems as $key => $item)
-                                @php
+                                {{-- @php
                                     $product = $item->product_variation->productWithTrashed;
-                                @endphp
+                                @endphp --}}
                                 <tr>
                                     <td>{{ $key + 1 }}</td>
                                     <td class="text-nowrap">
