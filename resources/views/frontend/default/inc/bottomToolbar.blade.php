@@ -76,7 +76,7 @@
 <div class="offcanvas-left-menu position-fixed">
     <div class="mobile-menu">
         <button class="offcanvas-close"><i class="fa-solid fa-xmark"></i></button>
-        <a href="{{ route('home') }}" class="d-inline-block mb-5"><img
+        <a href="{{ route('home') }}" class="d-inline-block mb-5 mobile_header_logo"><img
                 src="{{ uploadedAsset(getSetting('navbar_logo')) }}" alt="logo"></a>
         <nav class="mobile-menu-wrapper scrollbar">
             <ul>

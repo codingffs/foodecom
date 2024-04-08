@@ -192,7 +192,7 @@
 
 
 
-                        <li class="nav-item dropdown tt-language-dropdown">
+                        {{-- <li class="nav-item dropdown tt-language-dropdown">
 
                             <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"
 
@@ -230,11 +230,11 @@
 
                             </ul>
 
-                        </li>
+                        </li> --}}
 
 
 
-                        @php
+                        {{-- @php
 
                             if (Session::has('currency_code')) {
 
@@ -256,11 +256,11 @@
 
                             }
 
-                        @endphp
+                        @endphp --}}
 
 
 
-                        <li class="nav-item dropdown tt-curency-dropdown">
+                        {{-- <li class="nav-item dropdown tt-curency-dropdown">
 
                             <a href="#" class="dropdown-toggle text-uppercase text-light"
 
@@ -290,11 +290,11 @@
 
                             </ul>
 
-                        </li>
+                        </li> --}}
 
 
 
-                        <li class="nav-item color-mode">
+                        {{-- <li class="nav-item color-mode">
 
                             <a href="javascript:void(0)" class="btn btn-link p-0 tt-theme-toggle fw-normal text-light">
 
@@ -312,7 +312,7 @@
 
                             </a>
 
-                        </li>
+                        </li> --}}
 
                     </ul>
 
@@ -332,7 +332,7 @@
 
                 <div class="col-xxl-2 col-xl-3 col-md-3 col-5">
 
-                    <a href="{{ route('home') }}" class="logo"><img
+                    <a href="{{ route('home') }}" class="logo header_logo"><img
 
                             src="{{ uploadedAsset(getSetting('navbar_logo')) }}" alt="logo" class="img-fluid"></a>
 
@@ -513,11 +513,11 @@
 
                                     <li><a href="{{ route('products.index') }}">{{ localize('Products') }}</a></li>
 
-                                    <li><a href="{{ route('home.campaigns') }}">{{ localize('Campaigns') }}</a>
+                                    {{-- <li><a href="{{ route('home.campaigns') }}">{{ localize('Campaigns') }}</a> --}}
 
                                     </li>
 
-                                    <li><a href="{{ route('home.coupons') }}">{{ localize('Coupons') }}</a>
+                                    {{-- <li><a href="{{ route('home.coupons') }}">{{ localize('Coupons') }}</a> --}}
 
                                     </li>
 

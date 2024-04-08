@@ -133,7 +133,7 @@
                         <!--maintenance mode settings-->
 
                         <!--seo meta description start-->
-                        <div class="card mb-4" id="section-5">
+                        {{-- <div class="card mb-4" id="section-5">
                             <div class="card-body">
                                 <h5 class="mb-4">{{ localize('SEO Meta Configuration') }}</h5>
 
@@ -186,7 +186,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <!--seo meta description end-->
 
                         <div class="mb-3">
@@ -198,7 +198,7 @@
                 </div>
 
                 <!--right sidebar-->
-                <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
+                {{-- <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
                     <div class="card tt-sticky-sidebar">
                         <div class="card-body">
                             <h5 class="mb-4">{{ localize('Configure General Settings') }}</h5>
@@ -220,7 +220,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

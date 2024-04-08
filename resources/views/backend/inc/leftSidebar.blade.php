@@ -1,7 +1,7 @@
 <aside class="tt-sidebar bg-light-subtle" id="sidebar">
     <div class="tt-brand">
         <a href="{{ auth()->user()->user_type != 'deliveryman' ? route('admin.dashboard') : route('deliveryman.dashboard') }}"
-            class="tt-brand-link">
+            class="tt-brand-link dashbaord_logo_icon">
             <img src="{{ uploadedAsset(getSetting('favicon')) }}" class="tt-brand-favicon ms-1" alt="favicon" />
             <img src="{{ uploadedAsset(getSetting('admin_panel_logo')) }}" class="tt-brand-logo ms-2" alt="logo" />
         </a>

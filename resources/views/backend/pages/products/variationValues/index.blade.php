@@ -174,7 +174,7 @@
                 </div>
 
                 <!--right sidebar-->
-                <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
+                {{-- <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
                     <div class="card tt-sticky-sidebar">
                         <div class="card-body">
                             <h5 class="mb-4">{{ localize('Variation Value Information') }}</h5>
@@ -193,7 +193,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
         </div>

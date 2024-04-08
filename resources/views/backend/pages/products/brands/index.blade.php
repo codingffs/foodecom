@@ -195,7 +195,7 @@
                             <!--brand info end-->
 
                             <!--seo meta description start-->
-                            <div class="card mb-4" id="section-3">
+                            {{-- <div class="card mb-4" id="section-3">
                                 <div class="card-body">
                                     <h5 class="mb-4">{{ localize('SEO Meta Configuration') }}</h5>
 
@@ -234,7 +234,7 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!--seo meta description end-->
 
                             <div class="row">
@@ -251,7 +251,7 @@
                 </div>
 
                 <!--right sidebar-->
-                <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
+                {{-- <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
                     <div class="card tt-sticky-sidebar">
                         <div class="card-body">
                             <h5 class="mb-4">{{ localize('Brand Information') }}</h5>
@@ -273,7 +273,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
         </div>

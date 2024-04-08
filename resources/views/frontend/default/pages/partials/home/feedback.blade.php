@@ -13,7 +13,7 @@
         class="position-absolute z--1 fd-4">
     <img src="{{ staticAsset('frontend/default/assets/img/shapes/fd-5.png') }}" alt="shape"
         class="position-absolute z--1 fd-5">
-    <div class="container">
+    {{-- <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <div class="section-title text-center">
@@ -49,5 +49,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 </section>

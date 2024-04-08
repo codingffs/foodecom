@@ -32,7 +32,7 @@
                             <div class="card-body">
                                 <h5 class="mb-4">{{ localize('Basic Information') }}</h5>
 
-                                <div class="mb-4">
+                                <div class="mb-4 hidden">
                                     <label for="category_id" class="form-label">{{ localize('Themes') }} <span
                                             class="text-danger">*</span> </label>
                                     <select class="form-control select2" name="theme_ids[]"
@@ -124,7 +124,7 @@
                         <!--product image and gallery end-->
 
                         <!--seo meta description start-->
-                        <div class="card mb-4" id="section-10">
+                        {{-- <div class="card mb-4" id="section-10">
                             <div class="card-body">
                                 <h5 class="mb-4">{{ localize('SEO Meta Configuration') }}</h5>
 
@@ -163,7 +163,7 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <!--seo meta description end-->
 
                         <!-- submit button -->
@@ -182,7 +182,7 @@
                 </div>
 
                 <!--right sidebar-->
-                <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
+                {{-- <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
                     <div class="card tt-sticky-sidebar d-none d-xl-block">
                         <div class="card-body">
                             <h5 class="mb-4">{{ localize('Category Information') }}</h5>
@@ -201,7 +201,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

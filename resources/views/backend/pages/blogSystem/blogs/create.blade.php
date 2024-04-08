@@ -145,7 +145,7 @@
                         <!-- image and gallery end-->
 
                         <!--seo meta description start-->
-                        <div class="card mb-4" id="section-10">
+                        {{-- <div class="card mb-4" id="section-10">
                             <div class="card-body">
                                 <h5 class="mb-4">{{ localize('SEO Meta Configuration') }}</h5>
 
@@ -184,7 +184,7 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <!--seo meta description end-->
 
                         <!-- submit button -->
@@ -203,7 +203,7 @@
                 </div>
 
                 <!--right sidebar-->
-                <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
+                {{-- <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
                     <div class="card tt-sticky-sidebar d-none d-xl-block">
                         <div class="card-body">
                             <h5 class="mb-4">{{ localize('Blog Information') }}</h5>
@@ -222,7 +222,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

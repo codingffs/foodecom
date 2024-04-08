@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-6">
-                <div class="gshop_subscribe_form text-center">
+                {{-- <div class="gshop_subscribe_form text-center">
                     <h4 class="text-white gshop-title">{{ localize('Subscribe to the us') }}<mark
                             class="p-0 position-relative text-secondary bg-transparent"> {{ localize('New Arrivals') }}
                             <img src="{{ staticAsset('frontend/default/assets/img/shapes/border-line.svg') }}"
@@ -25,7 +25,7 @@
                         <button type="submit"
                             class="btn btn-primary flex-shrink-0">{{ localize('Subscribe Now') }}</button>
                     </form>
-                </div>
+                </div> --}}
             </div>
         </div>
         <span class="gradient-spacer my-8 d-block"></span>
@@ -46,7 +46,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            {{-- <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                 <div class="footer-widget">
                     <h5 class="text-white mb-4">{{ localize('Quick Links') }}</h5>
                     @php
@@ -61,7 +61,7 @@
                         @endforeach
                     </ul>
                 </div>
-            </div>
+            </div> --}}
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                 <div class="footer-widget">
                     <h5 class="text-white mb-4">{{ localize('Customer Pages') }}</h5>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="col-lg-4 d-none d-lg-block">
                     <div class="logo-wrapper text-center">
-                        <a href="{{ route('home') }}" class="logo"><img
+                        <a href="{{ route('home') }}" class="logo footer_logo"><img
                                 src="{{ uploadedAsset(getSetting('footer_logo')) }}" alt="footer logo"
                                 class="img-fluid"></a>
                     </div>

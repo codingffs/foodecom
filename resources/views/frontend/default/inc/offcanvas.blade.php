@@ -1,7 +1,7 @@
 <div class="offcanvas_menu position-fixed">
     <div class="tt-short-info d-none d-md-none d-lg-none d-xl-block">
         <button class="offcanvas-close"><i class="fa-solid fa-xmark"></i></button>
-        <a href="{{ route('home') }}" class="logo-wrapper d-inline-block mb-5"><img
+        <a href="{{ route('home') }}" class="logo-wrapper aboutus_logo d-inline-block mb-5"><img
                 src="{{ uploadedAsset(getSetting('navbar_logo')) }}" alt="logo"></a>
         <div class="offcanvas-content">
             <h4 class="mb-4">{{ 'About Us' }}</h4>

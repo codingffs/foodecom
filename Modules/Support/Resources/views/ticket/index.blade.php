@@ -34,9 +34,9 @@
             <div class="row justify-content-between mb-5">
                 <div class="{{auth()->user()->user_type == 'customer' ? 'col-xl-12 col-md-12' : 'col-xl-8 col-md-8'}}">
                   <div class="card">
-                    <div class="card-header">
+                    {{-- <div class="card-header">
                       <h5 class="mb-0">{{localize('All Tickets')}}</h5>
-                    </div>
+                    </div> --}}
                     <div class="card-body p-0">
                       <div class="list-group list-group-flush">
                         @foreach ($tickets as $ticket)
@@ -82,7 +82,7 @@
                     </div>
                   </div>
                 </div>
-                @if(auth()->user()->user_type != 'customer')
+                {{-- @if(auth()->user()->user_type != 'customer')
                 <div class="col-xl-4 col-lg-4 col-md-4">
                   <div class="card tt-sticky-sidebar">
                     <div class="card-header">
@@ -105,7 +105,7 @@
                     </div>
                   </div>
                 </div>
-                @endif
+                @endif --}}
               </div>
 
 

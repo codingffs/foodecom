@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--favicon icon-->
-    <link rel="shortcut icon" href="{{ staticAsset('backend/assets/img/favicon.png') }}">
+    <link rel="icon" href="{{ uploadedAsset(getSetting('favicon')) }}" type="image/png" sizes="16x16">
 
     <!--title-->
     <title>
@@ -142,11 +142,38 @@
             toastr[level](message);
         }
 
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButton = document.querySelector('.tt-toggle-sidebar');
+            const faviconImage = document.querySelector('.tt-brand-favicon');
+            const LogoImage = document.querySelector('.tt-brand-logo');
+            faviconImage.style.display = 'none';
+            toggleButton.addEventListener('click', function() {
+                if (faviconImage.style.display === 'none') {
+                    faviconImage.style.display = 'inline-block';
+                    LogoImage.style.display = 'none';
+                } else {
+                    faviconImage.style.display = 'none';
+                    LogoImage.style.display = 'inline-block';
+                }
+            });
+            toggleButton.addEventListener('mouseenter', function() {
+                if (faviconImage.style.display === 'none') {
+                    LogoImage.style.display = 'inline-block';
+                }
+            });
+            toggleButton.addEventListener('mouseleave', function() {
+                if (faviconImage.style.display === 'none') {
+                    LogoImage.style.display = 'none';
+                }
+            });
+        });
+
         //laravel flash toast messages
         @foreach (session('flash_notification', collect())->toArray() as $message)
-            notifyMe("{{ $message['level'] }}", "{{ $message['message'] }}");
+        notifyMe("{{ $message['level'] }}", "{{ $message['message'] }}");
         @endforeach
-    </script>
+        
+        </script>
 </body>
 
 </html>

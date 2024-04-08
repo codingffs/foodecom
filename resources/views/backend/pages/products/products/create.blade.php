@@ -31,7 +31,7 @@
                             <div class="card-body">
                                 <h5 class="mb-4">{{ localize('Basic Information') }}</h5>
 
-                                <div class="mb-4">
+                                <div class="mb-4 hidden">
                                     <label for="category_id" class="form-label">{{ localize('Themes') }} <span
                                             class="text-danger">*</span> </label>
                                     <select class="form-control select2 themeChange" name="theme_ids[]"
@@ -113,13 +113,13 @@
                         <!--product image and gallery end-->
 
 
-                        <div class="mb-4 card">
+                        {{-- <div class="mb-4 card">
                             <div class="card-body">
                                 <label for="name" class="form-label">{{ localize('Product Youtube Vedio Embeded Code') }}</label>
                                 <input class="form-control" type="text" id="vedio_link" name="vedio_link">
                             </div>
                            
-                        </div>
+                        </div> --}}
 
 
 
@@ -140,7 +140,7 @@
                         <!--product category end-->
 
                         <!--product tags start-->
-                        <div class="card mb-4" id="section-tags">
+                        {{-- <div class="card mb-4" id="section-tags">
                             <div class="card-body">
                                 <h5 class="mb-4">{{ localize('Product Tags') }}</h5>
                                 <div class="mb-4">
@@ -153,11 +153,11 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <!--product tags end-->
 
                         <!--product brand and unit start-->
-                        <div class="row" id="section-4">
+                        {{-- <div class="row" id="section-4">
                             <div class="col-lg-6">
                                 <div class="card mb-4">
                                     <div class="card-body">
@@ -192,7 +192,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <!--product brand and unit end-->
 
                         <!--product price sku and stock start-->
@@ -487,7 +487,7 @@
                         <!--shipping configuration end-->
 
                         <!--product tax start-->
-                        <div class="card mb-4" id="section-8">
+                        {{-- <div class="card mb-4" id="section-8">
                             <div class="card-body">
                                 <h5 class="mb-4">{{ localize('Product Taxes') }} ({{ localize('Default 0%') }})</h5>
                                 <div class="row g-3">
@@ -513,12 +513,12 @@
                                     @endforeach
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <!--product tax end-->
 
                         <!--product sell target & status start-->
                         <div class="row g-3" id="section-9">
-                            <div class="col-lg-6">
+                            {{-- <div class="col-lg-6">
                                 <div class="card mb-4">
                                     <div class="card-body">
                                         <h5 class="mb-4">{{ localize('Sell Target') }}</h5>
@@ -528,7 +528,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="col-lg-6">
                                 <div class="card mb-4">
                                     <div class="card-body">
@@ -546,7 +546,7 @@
                         <!--product sell target & status end-->
 
                         <!--seo meta description start-->
-                        <div class="card mb-4" id="section-10">
+                        {{-- <div class="card mb-4" id="section-10">
                             <div class="card-body">
                                 <h5 class="mb-4">{{ localize('SEO Meta Configuration') }}</h5>
 
@@ -585,7 +585,7 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <!--seo meta description end-->
 
                         <!-- submit button -->
@@ -604,7 +604,7 @@
                 </div>
 
                 <!--right sidebar-->
-                <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
+                {{-- <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
                     <div class="card tt-sticky-sidebar">
                         <div class="card-body">
                             <h5 class="mb-4">{{ localize('Product Information') }}</h5>
@@ -648,7 +648,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

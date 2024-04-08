@@ -1,4 +1,4 @@
-<li>
+{{-- <li>
     <a href="{{ route('support.ticket.create') }}" class="{{ areActiveRoutes(['support.ticket.create'], 'active') }}">
         <span class="me-2">
 
@@ -39,4 +39,4 @@
         </span>
         {{ localize('All Tickets') }}
     </a>
-</li>
+</li> --}}

@@ -15,11 +15,11 @@
                                 <h2 class="h5 mb-lg-0">{{ localize('Products') }}</h2>
                             </div>
                             <div class="tt-action">
-                                <a href="{{ route('admin.products.export') }}" class="btn btn-danger"> <i
+                                {{-- <a href="{{ route('admin.products.export') }}" class="btn btn-danger"> <i
                                         data-feather="download"></i> {{ localize('Export') }}</a>
 
                                 <button class="btn btn-primary import"> <i data-feather="upload"></i>
-                                    {{ localize('Import') }}</button>
+                                    {{ localize('Import') }}</button> --}}
 
                                 @can('add_products')
                                     <a href="{{ route('admin.products.create') }}" class="btn btn-primary"><i
@@ -50,7 +50,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-auto">
+                                    {{-- <div class="col-auto">
                                         <div class="input-group">
                                             <select class="form-select select2" name="brand_id">
                                                 <option value="">{{ localize('Select Brand') }}</option>
@@ -63,7 +63,7 @@
                                                 @endforeach
                                             </select>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-auto">
                                         <div class="input-group">
                                             <select class="form-select select2" name="is_published"
@@ -102,7 +102,7 @@
                                     <th data-breakpoints="xs sm">{{ localize('Categories') }}</th>
                                     <th data-breakpoints="xs sm">{{ localize('Price') }}</th>
                                     <th data-breakpoints="xs sm md">{{ localize('Published') }}</th>
-                                    <th data-breakpoints="xs sm md">{{ localize('Themes') }}</th>
+                                    {{-- <th data-breakpoints="xs sm md">{{ localize('Themes') }}</th> --}}
                                     <th data-breakpoints="xs sm md" class="text-end">{{ localize('Action') }}</th>
                                 </tr>
                             </thead>
@@ -160,7 +160,7 @@
                                             @endcan
 
                                         </td>
-                                        <td> {{ $product->themes->pluck('name')}}</td>
+                                        {{-- <td> {{ $product->themes->pluck('name')}}</td> --}}
                                         <td class="text-end">
                                             <div class="dropdown tt-tb-dropdown">
                                                 <button type="button" class="btn p-0" data-bs-toggle="dropdown"

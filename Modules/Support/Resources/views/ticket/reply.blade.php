@@ -129,13 +129,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                  <div class="card tt-sticky-sidebar">
-                    <div class="card-header">
+                {{-- <div class="col-xl-4 col-lg-4 col-md-4"> --}}
+                  {{-- <div class="card tt-sticky-sidebar"> --}}
+                    {{-- <div class="card-header">
                       <h5 class="mb-0">{{localize('Ticket Overview')}} #{{$ticket->id}}</h5>
-                    </div>
-                    <div class="card-body px-0">
-                      <table class="table boder">
+                    </div> --}}
+                    {{-- <div class="card-body px-0"> --}}
+                      {{-- <table class="table boder">
                         <tbody>
                           
                           <tr>
@@ -185,7 +185,7 @@
                         
         
                         </tbody>
-                      </table>                     
+                      </table>                      --}}
                            @if(auth()->user()->user_type == 'admin')               
                         <a href="#" class="btn-link text-danger px-3 confirm-delete"  data-href="{{ route('support.ticket.destroy', $ticket->id) }}"
                             title="{{ localize('Delete This Ticket') }}">
@@ -194,9 +194,9 @@
                         </a>
                         @endif
                      
-                    </div>
-                  </div>
-                </div>
+                    {{-- </div> --}}
+                  {{-- </div> --}}
+                {{-- </div> --}}
               </div>
         </div>
     </section>

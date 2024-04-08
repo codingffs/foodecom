@@ -74,40 +74,40 @@
                         </li>
                     @endcan
 
-                    @can('brands')
+                    {{-- @can('brands')
                         <li class="{{ areActiveRoutes(['admin.brands.index', 'admin.brands.edit'], 'tt-menu-item-active') }}">
                             <a href="{{ route('admin.brands.index') }}"
                                 class="{{ areActiveRoutes(['admin.brands.index', 'admin.brands.edit']) }}">{{ localize('All Brands') }}</a>
                         </li>
-                    @endcan
+                    @endcan --}}
 
-                    @can('units')
+                    {{-- @can('units')
                         <li class="{{ areActiveRoutes(['admin.units.index', 'admin.units.edit'], 'tt-menu-item-active') }}">
                             <a href="{{ route('admin.units.index') }}"
                                 class="{{ areActiveRoutes(['admin.units.index']) }}">{{ localize('All Units') }}</a>
                         </li>
-                    @endcan
+                    @endcan --}}
 
-                    @can('taxes')
+                    {{-- @can('taxes')
                         <li class="{{ areActiveRoutes(['admin.taxes.index', 'admin.taxes.edit'], 'tt-menu-item-active') }}">
                             <a href="{{ route('admin.taxes.index') }}"
                                 class="{{ areActiveRoutes(['admin.taxes.index']) }}">{{ localize('All Taxes') }}</a>
                         </li>
-                    @endcan
+                    @endcan --}}
                 </ul>
             </div>
         </li>
     @endcan
 
     <!-- pos -->
-    @canany(['pos'])
+    {{-- @canany(['pos'])
         <li class="side-nav-item nav-item">
             <a href="{{ route('admin.pos.index') }}" class="side-nav-link">
                 <span class="tt-nav-link-icon"><i data-feather="table"></i></span>
                 <span class="tt-nav-link-text">{{ localize('Pos System') }}</span>
             </a>
         </li>
-    @endcan
+    @endcan --}}
 
     <!-- orders -->
     @can('orders')
@@ -132,15 +132,15 @@
     @endcan
 
     <!-- stock -->
-    @php
+    {{-- @php
         $stockActiveRoutes = [
             'admin.stocks.create',
             'admin.locations.index',
             'admin.locations.create',
             'admin.locations.edit',
         ];
-    @endphp
-    @canany(['add_stock', 'show_locations'])
+    @endphp --}}
+    {{-- @canany(['add_stock', 'show_locations'])
         <li class="side-nav-item nav-item {{ areActiveRoutes($stockActiveRoutes, 'tt-menu-item-active') }}">
             <a data-bs-toggle="collapse" href="#manageStock"
                 aria-expanded="{{ areActiveRoutes($stockActiveRoutes, 'true') }}" aria-controls="manageStock"
@@ -167,20 +167,20 @@
                 </ul>
             </div>
         </li>
-    @endcan
+    @endcan --}}
 
 
     <!-- Refunds -->
-    @php
+    {{-- @php
         $refundsActiveRoutes = [
             'admin.refund.configurations',
             'admin.refund.requests',
             'admin.refund.refunded',
             'admin.refund.rejected',
         ];
-    @endphp
+    @endphp --}}
 
-    @canany(['refund_configurations', 'refund_requests', 'approved_refunds', 'rejected_refunds'])
+    {{-- @canany(['refund_configurations', 'refund_requests', 'approved_refunds', 'rejected_refunds'])
         <li class="side-nav-item nav-item {{ areActiveRoutes($refundsActiveRoutes, 'tt-menu-item-active') }}">
             <a data-bs-toggle="collapse" href="#manageRefunds"
                 aria-expanded="{{ areActiveRoutes($refundsActiveRoutes, 'true') }}" aria-controls="manageRefunds"
@@ -219,18 +219,18 @@
                 </ul>
             </div>
         </li>
-    @endcan
+    @endcan --}}
 
 
     <!-- Rewards & Wallet -->
-    @php
+    {{-- @php
         $rewardsActiveRoutes = [
             'admin.rewards.configurations',
             'admin.rewards.setPoints',
             'admin.wallet.configurations',
         ];
-    @endphp
-    @canany(['reward_configurations', 'set_reward_points'])
+    @endphp --}}
+    {{-- @canany(['reward_configurations', 'set_reward_points'])
         <li class="side-nav-item nav-item {{ areActiveRoutes($rewardsActiveRoutes, 'tt-menu-item-active') }}">
             <a data-bs-toggle="collapse" href="#manageRewards"
                 aria-expanded="{{ areActiveRoutes($rewardsActiveRoutes, 'true') }}" aria-controls="manageRewards"
@@ -263,7 +263,7 @@
                 </ul>
             </div>
         </li>
-    @endcan
+    @endcan --}}
 
     <!-- Users -->
     <li class="side-nav-title side-nav-item nav-item mt-3">
@@ -371,7 +371,7 @@
     </li>
 
     <!-- tags -->
-    @php
+    {{-- @php
         $tagsActiveRoutes = ['admin.tags.index', 'admin.tags.edit'];
     @endphp
     @can('tags')
@@ -381,10 +381,10 @@
                 <span class="tt-nav-link-text">{{ localize('Tags') }}</span>
             </a>
         </li>
-    @endcan
+    @endcan --}}
 
     <!-- pages -->
-    @php
+    {{-- @php
         $pagesActiveRoutes = ['admin.pages.index', 'admin.pages.create', 'admin.pages.edit'];
     @endphp
     @can('pages')
@@ -394,11 +394,11 @@
                 <span class="tt-nav-link-text">{{ localize('Pages') }}</span>
             </a>
         </li>
-    @endcan
+    @endcan --}}
 
 
     <!-- Blog Systems -->
-    @php
+    {{-- @php
         $blogActiveRoutes = [
             'admin.blogs.index',
             'admin.blogs.create',
@@ -406,8 +406,8 @@
             'admin.blogCategories.index',
             'admin.blogCategories.edit',
         ];
-    @endphp
-    @canany(['blogs', 'blog_categories'])
+    @endphp --}}
+    {{-- @canany(['blogs', 'blog_categories'])
         <li class="side-nav-item nav-item {{ areActiveRoutes($blogActiveRoutes, 'tt-menu-item-active') }}">
             <a data-bs-toggle="collapse" href="#blogSystem"
                 aria-expanded="{{ areActiveRoutes($blogActiveRoutes, 'true') }}" aria-controls="blogSystem"
@@ -434,7 +434,7 @@
                 </ul>
             </div>
         </li>
-    @endcan
+    @endcan --}}
 
     <!-- media manager -->
     @can('media_manager')

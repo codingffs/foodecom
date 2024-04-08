@@ -16,7 +16,7 @@
                         @csrf
 
                         <div class="mb-7">
-                            <a href="{{ route('home') }}">
+                            <a href="{{ route('home') }}"  class="register_logo">
                                 <img src="{{ uploadedAsset(getSetting('navbar_logo')) }}" alt="logo">
                             </a>
                         </div>

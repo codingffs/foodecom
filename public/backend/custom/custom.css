@@ -50,3 +50,17 @@
 {
     width: 30%;
 }
+li.nav-item.mode_css {
+    display: none;
+}
+.dashbaord_logo_icon .tt-brand-favicon{
+    height: 55px !important;
+    width: auto !important;
+}
+.hidden{
+    display: none !important;
+}
+.content-main .tt-sidebar-user,
+aside .tt-sidebar-user {
+  display: none;
+}

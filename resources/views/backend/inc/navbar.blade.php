@@ -69,7 +69,7 @@
                             }
                         @endphp
 
-                    <li class="nav-item dropdown tt-curency-lang-dropdown d-none d-md-block">
+                    {{-- <li class="nav-item dropdown tt-curency-lang-dropdown d-none d-md-block">
                         <a href="javascript:void(0);" class="nav-link" data-bs-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             <img src="{{ staticAsset('backend/assets/img/flags/' . $currentLanguage->flag . '.png') }}"
@@ -89,10 +89,10 @@
                                 </li>
                             @endforeach
                         </ul>
-                    </li>
+                    </li> --}}
 
 
-                    @php
+                    {{-- @php
                         if (Session::has('currency_code')) {
                             $currency_code = Session::get('currency_code', Config::get('app.currency_code'));
                         } else {
@@ -104,9 +104,9 @@
                         if (is_null($currentCurrency)) {
                             $currentCurrency = \App\Models\Currency::where('code', 'usd')->first();
                         }
-                    @endphp
+                    @endphp --}}
 
-                    <li class="nav-item dropdown tt-curency-lang-dropdown d-none d-md-block">
+                    {{-- <li class="nav-item dropdown tt-curency-lang-dropdown d-none d-md-block">
                         <a href="#" class="nav-link text-uppercase" data-bs-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">{{ $currentCurrency->symbol }} {{ $currentCurrency->code }}</a>
                         <ul class="dropdown-menu dropdown-menu-end py-0 shadow border-0">
@@ -120,10 +120,10 @@
                                 </li>
                             @endforeach
                         </ul>
-                    </li>
+                    </li> --}}
 
 
-                    <li class="nav-item">
+                    <li class="nav-item mode_css">
                         <a href="javascript:void(0)" class="nav-link tt-theme-toggle">
                             <div class="tt-theme-light"><i data-feather="moon" class="fs-xm"></i></div>
                             <div class="tt-theme-dark"><i data-feather="sun" class="fs-xm"></i></div>

@@ -14,11 +14,13 @@
                             <div class="row g-3 align-items-center">
                                 <div class="col-auto flex-grow-1">
                                     <div class="tt-page-title">
-                                        <h2 class="h5 mb-0">{{ localize('Update Variation') }} <sup
-                                                class="badge bg-soft-warning px-2">{{ $lang_key }}</sup></h2>
+                                        <h2 class="h5 mb-0">{{ localize('Update Variation') }} 
+                                            {{-- <sup
+                                                class="badge bg-soft-warning px-2">{{ $lang_key }}</sup> --}}
+                                            </h2>
                                     </div>
                                 </div>
-                                <div class="col-4 col-md-2">
+                                {{-- <div class="col-4 col-md-2">
                                     <select id="language" class="w-100 form-control text-capitalize country-flag-select"
                                         data-toggle="select2" onchange="localizeData(this.value)">
                                         @foreach (\App\Models\Language::all() as $key => $language)
@@ -29,7 +31,7 @@
                                             </option>
                                         @endforeach
                                     </select>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -76,7 +78,7 @@
                 </div>
 
                 <!--right sidebar-->
-                <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
+                {{-- <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
                     <div class="card tt-sticky-sidebar d-none d-xl-block">
                         <div class="card-body">
                             <h5 class="mb-4">{{ localize('Variation Information') }}</h5>
@@ -89,7 +91,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

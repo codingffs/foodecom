@@ -353,3 +353,19 @@ html:not([dir="rtl"]) .toast-close-button {
 {
     width: 10%;
 }
+.logo.header_logo > img , .mobile_header_logo > img{
+   height: 70px !important;
+    width: auto !important;
+}
+.aboutus_logo > img{
+    height: 70px !important;
+    width: auto !important;
+}
+.footer_logo > img{
+    height: 70px !important;
+    width: auto !important;
+}
+.register_logo > img{
+    height: 90px !important;
+    width: auto !important;
+}
