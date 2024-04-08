@@ -64,3 +64,7 @@ li.nav-item.mode_css {
 aside .tt-sidebar-user {
   display: none;
 }
+.loader_navlogo{
+    height: auto !important;
+    width: 40% !important;
+}
