@@ -109,19 +109,25 @@
                             </tr>
                             @foreach ($orderItems as $key => $item)
                                 @php
-                                    $product = $item->product_variation->productWithTrashed ?? ' ';
+                                    $product = $item->product_variation->productWithTrashed ?? '';
                                 @endphp
                                 <tr>
                                     <td>{{ $key + 1 }}</td>
                                     <td class="text-nowrap">
                                         <div class="d-flex">
-                                            <img src="{{ uploadedAsset($product->thumbnail_image) }}"
+                                            <img src="{{ isset($product->thumbnail_image) ? uploadedAsset($product->thumbnail_image) : '' }}"
+                                            @if(isset($product->name))
                                                 alt="{{ $product->collectLocalization('name') }}"
+                                                @endif
                                                 class="img-fluid product-item d-none">
                                             {{-- <div class="ms-2"> --}}
                                             <div class="">
+                                                @if(isset($product->name))
                                                 <span>{{ $product->collectLocalization('name') }}</span>
+                                               @endif
+                                            
                                                 <div>
+                                                   @if(isset($item->product_variation->combinations))
                                                     @foreach (generateVariationOptions($item->product_variation->combinations) as $variation)
                                                         <span class="fs-xs">
                                                             {{ $variation['name'] }}:
@@ -133,6 +139,7 @@
                                                             @endif
                                                         </span>
                                                     @endforeach
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
