@@ -91,20 +91,6 @@
                         </div>
                     </form>
                 </div>
-
-                <!--right sidebar-->
-                {{-- <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
-                    <div class="card tt-sticky-sidebar">
-                        <div class="card-body">
-                            <h5 class="mb-3">{{ localize('Homepage Configuration') }}</h5>
-                            <div class="tt-vertical-step-link">
-                                <ul class="list-unstyled">
-                                    @include('backend.pages.appearance.homepage.inc.rightSidebar')
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
 
         </div>

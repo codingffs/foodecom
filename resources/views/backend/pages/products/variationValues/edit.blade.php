@@ -16,23 +16,9 @@
                                 <div class="col-auto flex-grow-1">
                                     <div class="tt-page-title">
                                         <h2 class="h5 mb-0">{{ localize('Update Variation Value') }}
-                                             {{-- <sup
-                                                class="badge bg-soft-warning px-2">{{ $lang_key }}</sup> --}}
                                             </h2>
                                     </div>
                                 </div>
-                                {{-- <div class="col-4 col-md-2">
-                                    <select id="language" class="w-100 form-control text-capitalize country-flag-select"
-                                        data-toggle="select2" onchange="localizeData(this.value)">
-                                        @foreach (\App\Models\Language::all() as $key => $language)
-                                            <option value="{{ $language->code }}"
-                                                {{ $lang_key == $language->code ? 'selected' : '' }}
-                                                data-flag="{{ staticAsset('backend/assets/img/flags/' . $language->flag . '.png') }}">
-                                                {{ $language->name }}
-                                            </option>
-                                        @endforeach
-                                    </select>
-                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -79,22 +65,6 @@
 
                     </form>
                 </div>
-
-                <!--right sidebar-->
-                {{-- <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
-                    <div class="card tt-sticky-sidebar d-none d-xl-block">
-                        <div class="card-body">
-                            <h5 class="mb-4">{{ localize('Variation Value Information') }}</h5>
-                            <div class="tt-vertical-step">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#section-1" class="active">{{ localize('Basic Information') }}</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </section>

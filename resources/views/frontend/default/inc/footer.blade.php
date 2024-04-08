@@ -8,24 +8,6 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-6">
-                {{-- <div class="gshop_subscribe_form text-center">
-                    <h4 class="text-white gshop-title">{{ localize('Subscribe to the us') }}<mark
-                            class="p-0 position-relative text-secondary bg-transparent"> {{ localize('New Arrivals') }}
-                            <img src="{{ staticAsset('frontend/default/assets/img/shapes/border-line.svg') }}"
-                                alt="border line" class="position-absolute border-line"></mark><br
-                            class="d-none d-sm-block">{{ localize('& Other Information.') }}</h4>
-                    <form class="mt-5 d-flex align-items-center bg-white rounded subscribe_form"
-                        action="{{ route('subscribe.store') }}" method="POST">
-                        @csrf
-                        @if (getSetting('enable_recaptcha') == 1)
-                            {!! RecaptchaV3::field('recaptcha_token') !!}
-                        @endif
-                        <input type="email" class="form-control" placeholder="{{ localize('Enter Email Address') }}"
-                            type="email" name="email" required>
-                        <button type="submit"
-                            class="btn btn-primary flex-shrink-0">{{ localize('Subscribe Now') }}</button>
-                    </form>
-                </div> --}}
             </div>
         </div>
         <span class="gradient-spacer my-8 d-block"></span>
@@ -46,22 +28,6 @@
                     </ul>
                 </div>
             </div>
-            {{-- <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                <div class="footer-widget">
-                    <h5 class="text-white mb-4">{{ localize('Quick Links') }}</h5>
-                    @php
-                        $quick_links = getSetting('quick_links') != null ? json_decode(getSetting('quick_links')) : [];
-                        $pages = \App\Models\Page::whereIn('id', $quick_links)->get();
-                    @endphp
-                    <ul class="footer-nav">
-                        @foreach ($pages as $page)
-                            <li><a
-                                    href="{{ route('home.pages.show', $page->slug) }}">{{ $page->collectLocalization('title') }}</a>
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div> --}}
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                 <div class="footer-widget">
                     <h5 class="text-white mb-4">{{ localize('Customer Pages') }}</h5>

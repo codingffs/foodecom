@@ -34,9 +34,6 @@
             <div class="row justify-content-between mb-5">
                 <div class="{{auth()->user()->user_type == 'customer' ? 'col-xl-12 col-md-12' : 'col-xl-8 col-md-8'}}">
                   <div class="card">
-                    {{-- <div class="card-header">
-                      <h5 class="mb-0">{{localize('All Tickets')}}</h5>
-                    </div> --}}
                     <div class="card-body p-0">
                       <div class="list-group list-group-flush">
                         @foreach ($tickets as $ticket)
@@ -82,30 +79,6 @@
                     </div>
                   </div>
                 </div>
-                {{-- @if(auth()->user()->user_type != 'customer')
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                  <div class="card tt-sticky-sidebar">
-                    <div class="card-header">
-                      <h5 class="mb-0">{{localize('All Category')}}</h5>
-                    </div>
-                    <div class="card-body p-0">
-                      <ul class="list-group mb-0 list-group-flush">
-                        @foreach($categories as $category)
-                        <a href="{{route('support.ticket.index', ['category_id'=>$category->id])}}" class="">
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                            <div class="me-auto">
-                                <div class="fw-bold">{{$category->name}}</div>
-                            </div>
-                            <span class="badge bg-primary rounded-pill">{{$category->tickets_count}}</span>
-                            </li>
-                        </a>
-                        @endforeach
-                       
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                @endif --}}
               </div>
 
 

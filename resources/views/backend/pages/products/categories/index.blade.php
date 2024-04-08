@@ -63,7 +63,6 @@
                                     <th data-breakpoints="xs sm">{{ localize('Base Category') }}</th>
                                     <th data-breakpoints="xs sm">{{ localize('Brands') }}</th>
                                     <th data-breakpoints="xs sm">{{ localize('Priority') }}</th>
-                                    {{-- <th data-breakpoints="xs sm">{{ localize('Theme') }}</th> --}}
                                     <th data-breakpoints="xs sm md" class="text-end">{{ localize('Action') }}</th>
                                 </tr>
                             </thead>
@@ -104,8 +103,6 @@
                                             @endforelse
                                         </td>
                                         <td>{{ $category->sorting_order_level }}</td>
-                                        {{-- <td>{{ $category->themes->pluck('name') }}</td> --}}
-
                                         <td class="text-end">
                                             <div class="dropdown tt-tb-dropdown">
                                                 <button type="button" class="btn p-0" data-bs-toggle="dropdown"
