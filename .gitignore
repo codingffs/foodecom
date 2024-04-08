@@ -24,4 +24,4 @@ yarn-error.log
 script.sh
 nohup.out
 composer.lock
-composer.json
+# composer.json
