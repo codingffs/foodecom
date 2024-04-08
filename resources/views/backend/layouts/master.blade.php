@@ -24,6 +24,7 @@
     <div id="preloader" class="bg-light-subtle">
         <div class="preloader-wrap">
             <img src="{{ uploadedAsset(getSetting('navbar_logo')) }}" class="loader_navlogo">
+
             <div class="loading-bar"></div>
         </div>
     </div>
