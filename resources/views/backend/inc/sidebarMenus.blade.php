@@ -447,14 +447,14 @@
     @endcan
 
     <!-- Promotions -->
-    <li class="side-nav-title side-nav-item nav-item mt-3">
+    {{-- <li class="side-nav-title side-nav-item nav-item mt-3">
         <span class="tt-nav-title-text">{{ localize('Promotions') }}</span>
-    </li>
+    </li> --}}
     <!-- newsletter -->
-    @php
+    {{-- @php
         $newsletterActiveRoutes = ['admin.newsletters.index', 'admin.subscribers.index'];
-    @endphp
-    @canany(['newsletters', 'subscribers'])
+    @endphp --}}
+    {{-- @canany(['newsletters', 'subscribers'])
         <li class="side-nav-item nav-item {{ areActiveRoutes($newsletterActiveRoutes, 'tt-menu-item-active') }}">
             <a data-bs-toggle="collapse" href="#newsletter"
                 aria-expanded="{{ areActiveRoutes($newsletterActiveRoutes, 'true') }}" aria-controls="newsletter"
@@ -481,10 +481,10 @@
                 </ul>
             </div>
         </li>
-    @endcan
+    @endcan --}}
 
     <!-- Coupons -->
-    @can('coupons')
+    {{-- @can('coupons')
         <li
             class="side-nav-item nav-item {{ areActiveRoutes(['admin.coupons.index', 'admin.coupons.create', 'admin.coupons.edit'], 'tt-menu-item-active') }}">
             <a href="{{ route('admin.coupons.index') }}"
@@ -493,10 +493,10 @@
                 <span class="tt-nav-link-text">{{ localize('Coupons') }}</span>
             </a>
         </li>
-    @endcan
+    @endcan --}}
 
     <!-- campaigns -->
-    @can('campaigns')
+    {{-- @can('campaigns')
         <li
             class="side-nav-item nav-item {{ areActiveRoutes(['admin.campaigns.index', 'admin.campaigns.create', 'admin.campaigns.edit'], 'tt-menu-item-active') }}">
             <a href="{{ route('admin.campaigns.index') }}" class="side-nav-link">
@@ -504,7 +504,7 @@
                 <span class="tt-nav-link-text">{{ localize('Campaigns') }}</span>
             </a>
         </li>
-    @endcan
+    @endcan --}}
 
     <!-- Fulfillment -->
     <li class="side-nav-title side-nav-item nav-item mt-3">
@@ -547,12 +547,12 @@
     @endcan
 
     <!-- Reports -->
-    <li class="side-nav-title side-nav-item nav-item mt-3">
+    {{-- <li class="side-nav-title side-nav-item nav-item mt-3">
         <span class="tt-nav-title-text">{{ localize('Reports') }}</span>
-    </li>
+    </li> --}}
 
     <!-- reports -->
-    @php
+    {{-- @php
         $reportActiveRoutes = [
             'admin.reports.orders',
             'admin.reports.sales',
@@ -560,9 +560,9 @@
             'admin.reports.salesAmount',
             'admin.reports.deliveryStatus',
         ];
-    @endphp
+    @endphp --}}
 
-    @canany(['order_reports', 'product_sale_reports', 'category_sale_reports', 'sales_amount_reports',
+    {{-- @canany(['order_reports', 'product_sale_reports', 'category_sale_reports', 'sales_amount_reports',
         'delivery_status_reports'])
         <li class="side-nav-item nav-item {{ areActiveRoutes($reportActiveRoutes, 'tt-menu-item-active') }}">
             <a data-bs-toggle="collapse" href="#reports"
@@ -611,15 +611,15 @@
                 </ul>
             </div>
         </li>
-    @endcan
+    @endcan --}}
 
 
     <!-- Support -->
-    <li class="side-nav-title side-nav-item nav-item mt-3">
+    {{-- <li class="side-nav-title side-nav-item nav-item mt-3">
         <span class="tt-nav-title-text">{{ localize('Support') }}</span>
-    </li>
+    </li> --}}
 
-    @can('contact_us_messages')
+    {{-- @can('contact_us_messages')
         <li class="side-nav-item nav-item {{ areActiveRoutes(['admin.queries.index'], 'tt-menu-item-active') }}">
             <a href="{{ route('admin.queries.index') }}"
                 class="side-nav-link {{ areActiveRoutes(['admin.queries.index']) }}">
@@ -637,10 +637,10 @@
                 </span>
             </a>
         </li>
-    @endcan
-    @if (isModuleActive('Support'))
+    @endcan --}}
+    {{-- @if (isModuleActive('Support'))
         @include('support::sidebar.support_sidebar')
-    @endif
+    @endif --}}
     <!-- Appearance -->
     <li class="side-nav-title side-nav-item nav-item mt-3">
         <span class="tt-nav-title-text">{{ localize('Appearance') }}</span>

@@ -36798,3 +36798,8 @@ button.note-btn.dropdown-toggle:after {
     border-radius: 20px;
     border: 3px solid #fff;
 }
+#sidebar .tt-brand 
+{
+    padding: 0px;
+    justify-content:center ;
+}
