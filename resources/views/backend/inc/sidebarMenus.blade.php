@@ -689,7 +689,7 @@
     @endcanany
 
     <!-- halal -->
-    @php
+    {{-- @php
         $halalActiveRoutes = [
             'admin.appearance.halal.homepage.hero',
             'admin.appearance.halal.homepage.topCategories',
@@ -705,9 +705,9 @@
             'admin.appearance.halal.homepage.onSaleProducts',
             'admin.appearance.halal.homepage.blogs',
         ];
-    @endphp
+    @endphp --}}
 
-    @canany(['homepage'])
+    {{-- @canany(['homepage'])
         <li class="side-nav-item nav-item {{ areActiveRoutes($halalActiveRoutes, 'tt-menu-item-active') }}">
             <a data-bs-toggle="collapse" href="#halalOutlook"
                 aria-expanded="{{ areActiveRoutes($halalActiveRoutes, 'true') }}" aria-controls="halalOutlook"
@@ -727,7 +727,7 @@
                 </ul>
             </div>
         </li>
-    @endcanany
+    @endcanany --}}
 
 
     <!-- commonOutlook -->
