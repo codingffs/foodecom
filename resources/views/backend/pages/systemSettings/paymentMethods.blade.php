@@ -288,37 +288,6 @@
                         </div>
                     </form>
                 </div>
-
-                <!--right sidebar-->
-                {{-- <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
-                    <div class="card tt-sticky-sidebar">
-                        <div class="card-body">
-                            <h5 class="mb-4">{{ localize('Payment Methods Settings') }}</h5>
-                            <div class="tt-vertical-step">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#section-1" class="active">{{ localize('Cash On Delivery') }}</a>
-                                    </li>
-                                    <li>
-                                        <a href="#section-2">{{ localize('Paypal Credentials') }}</a>
-                                    </li>
-                                    <li>
-                                        <a href="#section-3">{{ localize('Stripe Credentials') }}</a>
-                                    </li>
-                                    <li>
-                                        <a href="#section-4">{{ localize('PayTm Credentials') }}</a>
-                                    </li>
-                                    <li>
-                                        <a href="#section-5">{{ localize('Razorpay Credentials') }}</a>
-                                    </li>
-                                    <li>
-                                        <a href="#section-6">{{ localize('IyZico Credentials') }}</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </section>

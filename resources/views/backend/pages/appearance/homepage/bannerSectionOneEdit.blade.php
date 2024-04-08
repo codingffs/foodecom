@@ -82,22 +82,6 @@
                         </div>
                     </form>
                 </div>
-
-                <!--right sidebar-->
-                {{-- <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
-                    <div class="card tt-sticky-sidebar">
-                        <div class="card-body">
-                            <h5 class="mb-4">{{ localize('Banner Section One') }}</h5>
-                            <div class="tt-vertical-step">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#section-1" class="active">{{ localize('Update Banner') }}</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
 
         </div>

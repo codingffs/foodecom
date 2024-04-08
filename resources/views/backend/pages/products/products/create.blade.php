@@ -111,18 +111,6 @@
                             </div>
                         </div>
                         <!--product image and gallery end-->
-
-
-                        {{-- <div class="mb-4 card">
-                            <div class="card-body">
-                                <label for="name" class="form-label">{{ localize('Product Youtube Vedio Embeded Code') }}</label>
-                                <input class="form-control" type="text" id="vedio_link" name="vedio_link">
-                            </div>
-                           
-                        </div> --}}
-
-
-
                         <!--product category start-->
                         <div class="card mb-4" id="section-3">
                             <div class="card-body">
@@ -138,62 +126,6 @@
                             </div>
                         </div>
                         <!--product category end-->
-
-                        <!--product tags start-->
-                        {{-- <div class="card mb-4" id="section-tags">
-                            <div class="card-body">
-                                <h5 class="mb-4">{{ localize('Product Tags') }}</h5>
-                                <div class="mb-4">
-                                    <select class="form-control select2" name="tag_ids[]" data-toggle="select2" multiple
-                                        data-placeholder="{{ localize('Select tags..') }}">
-                                        @foreach ($tags as $tag)
-                                            <option value="{{ $tag->id }}">
-                                                {{ $tag->name }}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
-                            </div>
-                        </div> --}}
-                        <!--product tags end-->
-
-                        <!--product brand and unit start-->
-                        {{-- <div class="row" id="section-4">
-                            <div class="col-lg-6">
-                                <div class="card mb-4">
-                                    <div class="card-body">
-                                        <h5 class="mb-4">{{ localize('Product Brand') }}</h5>
-                                        <div class="tt-select-brand">
-                                            <select class="select2 form-control" id="selectBrand" name="brand_id">
-                                                <option value="">{{ localize('Select Brand') }}</option>
-                                                @foreach ($brands as $brand)
-                                                    <option value="{{ $brand->id }}">
-                                                        {{ $brand->collectLocalization('name') }}
-                                                    </option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="card mb-4">
-                                    <div class="card-body">
-                                        <h5 class="mb-4">{{ localize('Product Unit') }}</h5>
-                                        <div class="tt-select-brand">
-                                            <select class="select2 form-control" id="selectUnit" name="unit_id">
-                                                <option value="">{{ localize('Select Unit') }}</option>
-                                                @foreach ($units as $unit)
-                                                    <option value="{{ $unit->id }}">
-                                                        {{ $unit->collectLocalization('name') }}
-                                                    </option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> --}}
-                        <!--product brand and unit end-->
 
                         <!--product price sku and stock start-->
                         <div class="card mb-4" id="section-5">
@@ -485,50 +417,9 @@
                             </div>
                         </div>
                         <!--shipping configuration end-->
-
-                        <!--product tax start-->
-                        {{-- <div class="card mb-4" id="section-8">
-                            <div class="card-body">
-                                <h5 class="mb-4">{{ localize('Product Taxes') }} ({{ localize('Default 0%') }})</h5>
-                                <div class="row g-3">
-                                    @foreach ($taxes as $tax)
-                                        <div class="col-lg-6">
-                                            <div class="mb-0">
-                                                <label class="form-label">{{ $tax->name }}</label>
-                                                <input type="hidden" value="{{ $tax->id }}" name="tax_ids[]">
-                                                <input type="number" lang="en" min="0" value="0"
-                                                    step="0.01" placeholder="{{ localize('Tax') }}" name="taxes[]"
-                                                    class="form-control" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="mb-0">
-                                                <label class="form-label">{{ localize('Percent or Fixed') }}</label>
-                                                <select class="select2 form-control" name="tax_types[]">
-                                                    <option value="percent">{{ localize('Percent') }} % </option>
-                                                    <option value="flat">{{ localize('Fiexed') }}</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    @endforeach
-                                </div>
-                            </div>
-                        </div> --}}
-                        <!--product tax end-->
-
                         <!--product sell target & status start-->
                         <div class="row g-3" id="section-9">
-                            {{-- <div class="col-lg-6">
-                                <div class="card mb-4">
-                                    <div class="card-body">
-                                        <h5 class="mb-4">{{ localize('Sell Target') }}</h5>
-                                        <div class="tt-select-brand">
-                                            <input type="number" min="0" name="sell_target" class="form-control"
-                                                placeholder="{{ localize('Type your sell target') }}">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> --}}
+                           
                             <div class="col-lg-6">
                                 <div class="card mb-4">
                                     <div class="card-body">
@@ -545,49 +436,6 @@
                         </div>
                         <!--product sell target & status end-->
 
-                        <!--seo meta description start-->
-                        {{-- <div class="card mb-4" id="section-10">
-                            <div class="card-body">
-                                <h5 class="mb-4">{{ localize('SEO Meta Configuration') }}</h5>
-
-                                <div class="mb-4">
-                                    <label for="meta_title" class="form-label">{{ localize('Meta Title') }}</label>
-                                    <input type="text" name="meta_title" id="meta_title"
-                                        placeholder="{{ localize('Type meta title') }}" class="form-control">
-                                    <span class="fs-sm text-muted">
-                                        {{ localize('Set a meta tag title. Recommended to be simple and unique.') }}
-                                    </span>
-                                </div>
-
-                                <div class="mb-4">
-                                    <label for="meta_description"
-                                        class="form-label">{{ localize('Meta Description') }}</label>
-                                    <textarea class="form-control" name="meta_description" id="meta_description" rows="4"
-                                        placeholder="{{ localize('Type your meta description') }}"></textarea>
-                                </div>
-                                <div class="mb-4">
-                                    <label class="form-label">{{ localize('Meta Image') }}</label>
-                                    <div class="tt-image-drop rounded">
-                                        <span class="fw-semibold">{{ localize('Choose Meta Image') }}</span>
-                                        <!-- choose media -->
-                                        <div class="tt-product-thumb show-selected-files mt-3">
-                                            <div class="avatar avatar-xl cursor-pointer choose-media"
-                                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-                                                onclick="showMediaManager(this)" data-selection="single">
-                                                <input type="hidden" name="meta_image">
-                                                <div class="no-avatar rounded-circle">
-                                                    <span><i data-feather="plus"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- choose media -->
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div> --}}
-                        <!--seo meta description end-->
-
                         <!-- submit button -->
                         <div class="row">
                             <div class="col-12">
@@ -602,53 +450,6 @@
 
                     </form>
                 </div>
-
-                <!--right sidebar-->
-                {{-- <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
-                    <div class="card tt-sticky-sidebar">
-                        <div class="card-body">
-                            <h5 class="mb-4">{{ localize('Product Information') }}</h5>
-                            <div class="tt-vertical-step">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#section-1" class="active">{{ localize('Basic Information') }}</a>
-                                    </li>
-                                    <li>
-                                        <a href="#section-2">{{ localize('Product Images') }}</a>
-                                    </li>
-                                    <li>
-                                        <a href="#section-3">{{ localize('Category') }}</a>
-                                    </li>
-                                    <li>
-                                        <a href="#section-tags">{{ localize('Product tags') }}</a>
-                                    </li>
-                                    <li>
-                                        <a href="#section-4">{{ localize('Product Brand & Unit') }}</a>
-                                    </li>
-                                    <li>
-                                        <a href="#section-5">{{ localize('Price, SKU, Stock & Variations') }}</a>
-                                    </li>
-                                    <li>
-                                        <a href="#section-6">{{ localize('Product Discount') }}</a>
-                                    </li>
-                                    <li>
-                                        <a href="#section-7">{{ localize('Minimum Purchase') }}</a>
-                                    </li>
-                                    <li>
-                                        <a href="#section-8">{{ localize('Product Taxes') }}</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#section-9">{{ localize('Sell Target and Status') }}</a>
-                                    </li>
-                                    <li>
-                                        <a href="#section-10">{{ localize('SEO Meta Options') }}</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </section>

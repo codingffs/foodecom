@@ -189,131 +189,6 @@
                             }
 
                         @endphp
-
-
-
-                        {{-- <li class="nav-item dropdown tt-language-dropdown">
-
-                            <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"
-
-                                aria-haspopup="true" aria-expanded="true">
-
-                                <img src="{{ staticAsset('backend/assets/img/flags/' . $currentLanguage->flag . '.png') }}"
-
-                                    alt="country" class="img-fluid me-1"> {{ $currentLanguage->name }}
-
-                            </a>
-
-                            <ul class="dropdown-menu dropdown-menu-end" data-popper-placement="bottom-end">
-
-
-
-                                @foreach (\App\Models\Language::where('is_active', 1)->get() as $key => $language)
-
-                                    <li>
-
-                                        <a class="dropdown-item" href="javascript:void(0);"
-
-                                            onclick="changeLocaleLanguage(this)" data-flag="{{ $language->code }}">
-
-                                            <img src="{{ staticAsset('backend/assets/img/flags/' . $language->flag . '.png') }}"
-
-                                                alt="country" class="img-fluid me-1">
-
-                                            {{ $language->name }}
-
-                                        </a>
-
-                                    </li>
-
-                                @endforeach
-
-                            </ul>
-
-                        </li> --}}
-
-
-
-                        {{-- @php
-
-                            if (Session::has('currency_code')) {
-
-                                $currency_code = Session::get('currency_code', Config::get('app.currency_code'));
-
-                            } else {
-
-                                $currency_code = env('DEFAULT_CURRENCY');
-
-                            }
-
-                            $currentCurrency = \App\Models\Currency::where('code', $currency_code)->first();
-
-
-
-                            if ($currentCurrency == null) {
-
-                                $currentCurrency = \App\Models\Currency::where('code', 'usd')->first();
-
-                            }
-
-                        @endphp --}}
-
-
-
-                        {{-- <li class="nav-item dropdown tt-curency-dropdown">
-
-                            <a href="#" class="dropdown-toggle text-uppercase text-light"
-
-                                data-bs-toggle="dropdown" aria-haspopup="true"
-
-                                aria-expanded="false">{{ $currentCurrency->symbol }}
-
-                                {{ $currentCurrency->code }}</a>
-
-                            <ul class="dropdown-menu dropdown-menu-end">
-
-                                @foreach (\App\Models\Currency::where('is_active', 1)->get() as $key => $currency)
-
-                                    <li>
-
-                                        <a class="dropdown-item fs-xs text-uppercase" href="javascript:void(0);"
-
-                                            onclick="changeLocaleCurrency(this)" data-currency="{{ $currency->code }}">
-
-                                            {{ $currency->symbol }} {{ $currency->code }}
-
-                                        </a>
-
-                                    </li>
-
-                                @endforeach
-
-                            </ul>
-
-                        </li> --}}
-
-
-
-                        {{-- <li class="nav-item color-mode">
-
-                            <a href="javascript:void(0)" class="btn btn-link p-0 tt-theme-toggle fw-normal text-light">
-
-                                <div class="tt-theme-light" data-bs-toggle="tooltip" data-bs-placement="left"
-
-                                    data-bs-title="Dark">{{ localize('Dark') }} <i class="fas fa-moon fs-lg ms-1"></i>
-
-                                </div>
-
-                                <div class="tt-theme-dark" data-bs-toggle="tooltip" data-bs-placement="left"
-
-                                    data-bs-title="Light">{{ localize('Light') }} <i class="fas fa-sun fs-lg ms-1"></i>
-
-                                </div>
-
-                            </a>
-
-                        </li> --}}
-
                     </ul>
 
                 </div>
@@ -513,11 +388,9 @@
 
                                     <li><a href="{{ route('products.index') }}">{{ localize('Products') }}</a></li>
 
-                                    {{-- <li><a href="{{ route('home.campaigns') }}">{{ localize('Campaigns') }}</a> --}}
 
                                     </li>
 
-                                    {{-- <li><a href="{{ route('home.coupons') }}">{{ localize('Coupons') }}</a> --}}
 
                                     </li>
 
