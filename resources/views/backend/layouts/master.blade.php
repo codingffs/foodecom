@@ -23,7 +23,7 @@
     <!--preloader start-->
     <div id="preloader" class="bg-light-subtle">
         <div class="preloader-wrap">
-            <img src="{{ uploadedAsset(getSetting('navbar_logo')) }}" class="img-fluid" max-width="180">
+            <img src="{{ uploadedAsset(getSetting('navbar_logo')) }}" class="img-fluid" width="250">
             <div class="loading-bar"></div>
         </div>
     </div>
