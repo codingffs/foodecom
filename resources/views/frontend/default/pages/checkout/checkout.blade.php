@@ -121,8 +121,10 @@
                                             id="regular-shipping" value="regular" checked>
                                         <label for="regular-shipping"
                                             class="tt-address-info bg-white rounded p-4 position-relative">
+                                            {{-- <i class="fa-thin fa-person-carry-box"></i> --}}
                                             <div class="d-flex flex-wrap justify-content-between align-items-center">
-                                                <span class=""><i class="fas fa-truck me-1"></i>
+                                                <span class=""><i class="fas fa-person-walking me-1"></i>
+                                                {{-- <span class=""><i class="fas fa-truck me-1"></i> --}}
                                                     {{ localize('Regular Delivery') }}
                                                 </span>
                                                 <p class="mb-0 fs-sm">

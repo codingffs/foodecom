@@ -71,6 +71,8 @@
     <meta name="theme-color" content="#6eb356"/>
     <link rel="apple-touch-icon" href="{{ staticAsset('/pwa.png') }}"/>
     <link rel="manifest" href="{{ staticAsset('/manifest.json') }}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- recaptcha -->
     @if (getSetting('enable_recaptcha') == 1)

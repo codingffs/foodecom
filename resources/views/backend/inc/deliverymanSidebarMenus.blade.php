@@ -133,7 +133,7 @@
 
 
     <!-- Earning Histories -->
-    <li class="side-nav-item nav-item">
+    {{-- <li class="side-nav-item nav-item">
         <a href="{{ route('deliveryman.earning-history') }}" class="side-nav-link">
             <span class="tt-nav-link-icon"><i data-feather="dollar-sign"></i></span>
             <span class="tt-nav-link-text">{{ localize('Earning Histories') }}</span>
@@ -146,5 +146,5 @@
             <span class="tt-nav-link-icon"><i data-feather="credit-card"></i></span>
             <span class="tt-nav-link-text">{{ localize('payout Histories') }}</span>
         </a>
-    </li>
+    </li> --}}
 </ul>

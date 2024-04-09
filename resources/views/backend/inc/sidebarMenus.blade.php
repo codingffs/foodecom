@@ -169,20 +169,20 @@
                         </li>
                     @endcan
 
-                    @can('deliveryman_payment_history')
+                     @can('deliveryman_payment_history')
                         <li class="{{ areActiveRoutes(['admin.deliverymen.payout.history'], 'tt-menu-item-active') }}">
                             <a
                                 href="{{ route('admin.deliverymen.payout.history') }}">{{ localize('Payout Histories') }}</a>
                         </li>
                     @endcan
 
-                    @can('deliveryman_config')
+                   {{-- @can('deliveryman_config')
                         <li class="{{ areActiveRoutes(['admin.deliveryman.config'], 'tt-menu-item-active') }}">
                             <a href="{{ route('admin.deliveryman.config') }}">{{ localize('Configurations') }}</a>
                         </li>
-                    @endcan
+                    @endcan --}}
 
-                    @can('deliveryman_payroll_create')
+                     {{--@can('deliveryman_payroll_create')
                         <li class="{{ areActiveRoutes(['admin.deliveryman.payroll'], 'tt-menu-item-active') }}">
                             <a href="{{ route('admin.deliveryman.payroll') }}">{{ localize('Deliveryman Payroll') }}</a>
                         </li>
@@ -194,7 +194,7 @@
                             <a
                                 href="{{ route('admin.deliveryman.payroll.list') }}">{{ localize('Deliveryman Payroll List') }}</a>
                         </li>
-                    @endcan
+                    @endcan --}}
 
 
                 </ul>

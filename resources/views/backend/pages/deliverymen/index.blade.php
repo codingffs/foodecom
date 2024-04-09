@@ -63,7 +63,7 @@
                                     <th data-breakpoints="xs sm">{{ localize('Location') }}</th>
                                     <th data-breakpoints="xs sm">{{ localize('Email') }}</th>
                                     <th data-breakpoints="xs sm">{{ localize('Phone') }}</th>
-                                    <th data-breakpoints="xs sm">{{ localize('Balance') }}</th>
+                                    {{-- <th data-breakpoints="xs sm">{{ localize('Balance') }}</th> --}}
                                     <th data-breakpoints="xs sm" class="text-end">{{ localize('Action') }}
                                     </th>
                                 </tr>
@@ -98,11 +98,11 @@
                                             @endif
                                         </td>
 
-                                        <td>
+                                        {{-- <td>
                                             <span class="text-accent fw-bold">
                                                 {{ formatPrice($deliveryman->user_balance) }}
                                             </span>
-                                        </td>
+                                        </td> --}}
                                         <td class="text-end">
                                             <div class="dropdown tt-tb-dropdown">
                                                 <button type="button" class="btn p-0" data-bs-toggle="dropdown"

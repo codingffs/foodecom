@@ -21,7 +21,7 @@
                     </div>
                 </div>
 
-               
+{{--                
                     <a href="{{route('deliveryman.earning-history')}}" class="col-lg-4 col-sm-6 mb-3">
                         <div class="card h-100 flex-column">
                             <div class="card-body">
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </a> --}}
 
 
                     <a href="{{route('deliveryman.assigned')}}" class="col-lg-4 col-sm-6 mb-3">

@@ -43,7 +43,7 @@
                 </table>
             </div>
             <div class="row g-4">
-                <div class="col-xl-7">
+                {{-- <div class="col-xl-7">
                     <div class="voucher-box py-7 px-5 position-relative z-1 overflow-hidden bg-white rounded mt-4">
                         <img src="{{ staticAsset('frontend/default/assets/img/shapes/circle-half.png') }}"
                             alt="circle shape" class="position-absolute end-0 top-0 z--1">
@@ -74,7 +74,7 @@
                         <!-- coupon form -->
 
                     </div>
-                </div>
+                </div> --}}
 
                 <div class="col-xl-5">
                     <div class="cart-summery bg-white rounded-2 pt-4 pb-7 px-5 mt-4">

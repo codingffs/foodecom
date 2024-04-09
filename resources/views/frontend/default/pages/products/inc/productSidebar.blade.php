@@ -43,7 +43,7 @@
     <!--Filter by Categories-->
 
     <!--Filter by Price-->
-    <div class="sidebar-widget price-filter-widget bg-white py-5 px-4 border-top">
+    {{-- <div class="sidebar-widget price-filter-widget bg-white py-5 px-4 border-top">
         <div class="widget-title d-flex">
             <h6 class="mb-0 flex-shrink-0">{{ localize('Filter by Price') }}</h6>
             <span class="hr-line w-100 position-relative d-block align-self-end ms-1"></span>
@@ -66,11 +66,11 @@
                 <button type="submit" class="btn btn-primary btn-sm mt-3">{{ localize('Filter') }}</button>
             </form>
         </div>
-    </div>
+    </div> --}}
     <!--Filter by Price-->
 
     <!--Filter by Tags-->
-    <div class="sidebar-widget tags-widget py-5 px-4 bg-white">
+    {{-- <div class="sidebar-widget tags-widget py-5 px-4 bg-white">
         <div class="widget-title d-flex">
             <h6 class="mb-0">{{ localize('Tags') }}</h6>
             <span class="hr-line w-100 position-relative d-block align-self-end ms-1"></span>
@@ -81,6 +81,6 @@
                     class="btn btn-outline btn-sm">{{ $tag->name }}</a>
             @endforeach
         </div>
-    </div>
+    </div> --}}
     <!--Filter by Tags-->
 </div>
