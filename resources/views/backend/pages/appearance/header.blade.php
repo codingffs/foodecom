@@ -160,35 +160,6 @@
                                         @endforeach
                                     </select>
                                 </div>
-
-                                <div class="my-3 mt-4">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <label class="form-label">{{ localize('Active Themes') }}</label>
-
-                                        <input type="hidden" name="types[]" value="show_theme_changes">
-                                        <div class="form-check form-switch">
-                                            <label class="form-check-label fw-medium text-primary"
-                                                for="show_theme_changes">{{ localize('Show Theme Changes?') }}</label>
-                                            <input type="checkbox" class="form-check-input" id="show_theme_changes"
-                                                name="show_theme_changes" @if (getSetting('show_theme_changes') == 1) checked @endif>
-                                        </div>
-                                    </div>
-
-                                    <input type="hidden" name="types[]" value="active_themes">
-                                    @php
-                                        $active_themes = getSetting('active_themes') != null ? json_decode(getSetting('active_themes')) : [1];
-                                    @endphp
-                                    <select class="form-control select2" name="active_themes[]" class="w-100"
-                                        data-toggle="select2" data-placeholder="{{ localize('Select themes') }}" multiple
-                                        required>
-                                        @foreach ($themes as $theme)
-                                            <option value="{{ $theme->id }}"
-                                                @if (in_array($theme->id, $active_themes)) selected @endif>
-                                                {{ localize($theme->name) }}</option>
-                                        @endforeach
-                                    </select>
-
-                                </div>
                                 <div class="mb-3">
 
                                     <input type="hidden" name="types[]" value="header_menu_labels">

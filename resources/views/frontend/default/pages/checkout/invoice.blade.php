@@ -36,8 +36,8 @@
                         </div>
                         <div class="col-lg-5 col-md-8">
                             <div class="text-lg-end">
-                                <a href="{{ route('home') }}"><img src="{{ uploadedAsset(getSetting('navbar_logo')) }}"
-                                        alt="logo" class="img-fluid"></a>
+                                <a href="{{ route('home') }}" ><img src="{{ uploadedAsset(getSetting('navbar_logo')) }}"
+                                        alt="logo" class="invoice_css" ></a>
                                 <h6 class="mb-0 text-gray mt-4">{{ getSetting('site_address') }}</h6>
                             </div>
                         </div>
