@@ -140,22 +140,28 @@
                             <tbody>
                                 @foreach ($order->orderItems as $key => $item)
                                     @php
-                                        $product = $item->product_variation->product;
+                                        $product = $item->product_variation->product ?? '';
                                     @endphp
                                     <tr>
                                         <td class="text-center">{{ $key + 1 }}</td>
                                         <td>
                                             <div class="d-flex align-items-center">
-                                                <div class="avatar avatar-sm"> <img
-                                                        src="{{ uploadedAsset($product->thumbnail_image) }}"
-                                                        alt="{{ $product->collectLocalization('name') }}"
+                                                <div class="avatar avatar-sm">
+                                                    <img
+                                                    src="{{ isset($product->thumbnail_image) ? uploadedAsset($product->thumbnail_image) : ''  }}"
+                                                    @if(isset($product->name))
+                                                    alt="{{ $product->collectLocalization('name') }}"
+                                                    @endif
                                                         class="rounded-circle">
                                                 </div>
                                                 <div class="ms-2">
                                                     <h6 class="fs-sm mb-0">
+                                                        @if(isset($product->name))
                                                         {{ $product->collectLocalization('name') }}
+                                                        @endif
                                                     </h6>
                                                     <div class="text-muted">
+                                                        @if(isset($item->product_variation->combinations))
                                                         @foreach (generateVariationOptions($item->product_variation->combinations) as $variation)
                                                             <span class="fs-xs">
                                                                 {{ $variation['name'] }}:
@@ -167,6 +173,7 @@
                                                                 @endif
                                                             </span>
                                                         @endforeach
+                                                        @endif
                                                     </div>
                                                 </div>
                                             </div>
@@ -234,36 +241,6 @@
                                         <strong
                                             class="text-accent">{{ formatPrice($order->orderGroup->grand_total_amount) }}</strong>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--right sidebar-->
-                <div class="col-xl-3 order-1 order-md-1 order-lg-1 order-xl-2">
-                    <div class="tt-sticky-sidebar">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h5 class="mb-4">{{ localize('Order Logs') }}</h5>
-                                <div class="tt-vertical-step">
-                                    <ul class="list-unstyled">
-
-                                        @forelse ($order->orderUpdates as $orderUpdate)
-                                            <li>
-                                                <a class="{{ $loop->first ? 'active' : '' }}">
-                                                    {{ $orderUpdate->note }} <br> By
-                                                    <span
-                                                        class="text-capitalize">{{ optional($orderUpdate->user)->name }}</span>
-                                                    at
-                                                    {{ date('d M, Y', strtotime($orderUpdate->created_at)) }}.</a>
-                                            </li>
-                                        @empty
-                                            <li>
-                                                <a class="active">{{ localize('No logs found') }}</a>
-                                            </li>
-                                        @endforelse
-                                    </ul>
                                 </div>
                             </div>
                         </div>

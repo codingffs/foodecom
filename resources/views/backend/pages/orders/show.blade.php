@@ -204,9 +204,6 @@
                                 @foreach ($order->orderItems as $key => $item)
                                     @php
                                         $product = $item->product_variation->productWithTrashed ?? '';
-
-                                     
-
                                     @endphp
                                     <tr>
                                         <td class="text-center">{{ $key + 1 }}</td>
