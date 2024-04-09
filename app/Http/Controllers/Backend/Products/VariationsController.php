@@ -109,7 +109,7 @@ class VariationsController extends Controller
     {
         $variation = Variation::findOrFail($id);
         $exitInProduct = ProductVariationCombination::where('variation_id', $id)->first();
-        if($exitInProduct) {
+        if($exitInProduct && $exitInProduct->product) {
             flash('Variation already exit in product name: '.$exitInProduct->product->name)->warning();
             return back();
         }
