@@ -219,13 +219,18 @@
 
                                             @foreach ($order->orderItems as $key => $item)
                                                 @php
-                                                    $product = $item->product_variation->productWithTrashed;
+                                                    $product = $item->product_variation->productWithTrashed ?? '';
                                                 @endphp
                                                 <tr>
                                                     <td style="font-size: 12px; color: #5b5b5b;  line-height: 18px;  vertical-align: top; padding:10px 0;"
                                                         class="article">
-                                                        <div>{{ $product->collectLocalization('name') }}</div>
+                                                        <div>
+                                                            @if(isset($product->name))
+                                                            {{ $product->collectLocalization('name') }}
+                                                            @endif
+                                                        </div>
                                                         <div class="text-muted">
+                                                            @if(isset($item->product_variation->combinations))
                                                             @foreach (generateVariationOptions($item->product_variation->combinations) as $variation)
                                                                 <span class="fs-xs">
                                                                     {{ $variation['name'] }}:
@@ -237,6 +242,7 @@
                                                                     @endif
                                                                 </span>
                                                             @endforeach
+                                                            @endif
                                                         </div>
                                                     </td>
                                                     <td

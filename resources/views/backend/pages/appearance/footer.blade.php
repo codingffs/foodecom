@@ -49,24 +49,6 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label class="form-label">{{ localize('Quick Links') }}</label>
-                                    @php
-                                        $quick_links = getSetting('quick_links') != null ? json_decode(getSetting('quick_links')) : [];
-                                    @endphp
-                                    <input type="hidden" name="types[]" value="quick_links">
-                                    <select class="form-control select2" name="quick_links[]" class="w-100"
-                                        data-toggle="select2" data-placeholder="{{ localize('Select quick link pages') }}"
-                                        multiple>
-                                        @foreach ($pages as $page)
-                                            <option value="{{ $page->id }}"
-                                                @if (in_array($page->id, $quick_links)) selected @endif>
-                                                {{ $page->collectLocalization('title') }}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
-
-
-                                <div class="mb-3">
                                     <label for="copyright_text" class="form-label">{{ localize('Copyright Text') }}</label>
                                     <input type="hidden" name="types[]" value="copyright_text">
                                     <textarea name="copyright_text" id="copyright_text" class="editor form-control">{{ getSetting('copyright_text') }}</textarea>
