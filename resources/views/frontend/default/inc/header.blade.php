@@ -424,7 +424,7 @@
 
 
 
-                                            <li><a href="{{ route('home.blogs') }}">{{ localize('Blogs') }}</a></li>
+                                            {{-- <li><a href="{{ route('home.blogs') }}">{{ localize('Blogs') }}</a></li> --}}
 
                                             <li><a
 

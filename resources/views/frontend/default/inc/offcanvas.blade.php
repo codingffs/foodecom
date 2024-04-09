@@ -83,7 +83,7 @@
                                 }
                             @endphp
 
-                            <li><a href="{{ route('home.blogs') }}">{{ localize('Blogs') }}</a></li>
+                            {{-- <li><a href="{{ route('home.blogs') }}">{{ localize('Blogs') }}</a></li> --}}
                             <li><a href="{{ route('home.pages.aboutUs') }}">{{ localize('About Us') }}</a></li>
                             <li><a href="{{ route('home.pages.contactUs') }}">{{ localize('Contact Us') }}</a></li>
                             @foreach ($pages as $navbarPage)
