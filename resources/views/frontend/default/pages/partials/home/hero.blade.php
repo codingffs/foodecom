@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-    @if(getSetting('facebook_link') || getSetting('twitter_link') || getSetting('linkedin_link') || getSetting('youtube_link'))
+    {{-- @if(getSetting('facebook_link') || getSetting('twitter_link') || getSetting('linkedin_link') || getSetting('youtube_link'))
         <div class="gs-hero-social">
             <ul class="list-unstyled">
                 @if(getSetting('facebook_link'))
@@ -66,7 +66,7 @@
             </ul>
             <span class="title fw-medium">{{localize('Follow on')}}</span>
         </div>
-    @endif
+    @endif --}}
 
     <div class="gshop-hero-slider-pagination theme-slider-control position-absolute top-50 translate-middle-y z-5">
     </div>
