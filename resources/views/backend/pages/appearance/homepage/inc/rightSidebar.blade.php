@@ -26,10 +26,10 @@
     <a href="{{ route('admin.appearance.homepage.bannerTwo') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.bannerTwo']) }}">{{ localize('Banner Section Two') }}</a>
 </li>
-{{-- <li>
+<li>
     <a href="{{ route('admin.appearance.homepage.clientFeedback') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.clientFeedback']) }}">{{ localize('Client Feedback') }}</a>
-</li> --}}
+</li>
 <li>
     <a href="{{ route('admin.appearance.homepage.bestSelling') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.bestSelling']) }}">{{ localize('Best Selling') }}</a>
