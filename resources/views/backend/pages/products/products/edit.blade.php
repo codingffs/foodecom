@@ -162,7 +162,28 @@
                                 </div>
                             </div>
                             <!--product category end-->
-
+                             <!--product brand and unit start-->
+                            <div class="row" id="section-4">
+                                <div class="col-lg-12">
+                                    <div class="card mb-4">
+                                        <div class="card-body">
+                                            <h5 class="mb-4">{{ localize('Product Brand') }}</h5>
+                                            <div class="tt-select-brand">
+                                                <select class="select2 form-control" id="selectBrand" name="brand_id">
+                                                    <option value="">{{ localize('Select Brand') }}</option>
+                                                    @foreach ($brands as $brand)
+                                                        <option value="{{ $brand->id }}"
+                                                            {{ $brand->id == $product->brand_id ? 'selected' : '' }}>
+                                                            {{ $brand->collectLocalization('name') }}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--product brand and unit end-->
                             <!--product price sku and stock start-->
                             <div class="card mb-4" id="section-5">
                                 <div class="card-body">
