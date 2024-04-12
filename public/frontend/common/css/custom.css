@@ -380,3 +380,30 @@ section.featured-products.pb-100.position-relative.overflow-hidden.z-1 {
 section.position-relative.banner-section.z-1.overflow-hidden {
     background-color: #e7e1d8 !important;
 } */
+
+.gstore-breadcrumb {
+    padding: 115px 0 120px;
+    background-color: rgb(57 34 10) !important;
+}
+.text-center {
+    color: white !important;
+}
+.breadcrumb .breadcrumb-item.fw-bold {
+    color: wheat !important;
+}
+.breadcrumb .breadcrumb-item a {
+    color: wheat !important;
+}
+.text-danger {
+    color: rgb(57 34 10) !important;
+}
+.border-secondary {
+    --bs-border-opacity: 1;
+    border-color: rgb(57 34 10) !important;
+}
+a.btn.btn-outline-secondary.btn-md.border-secondary.d-block.mt-4.w-100.direct-add-to-cart-btn.add-to-cart-text {
+    color: #39220a !important;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: rgb(245 207 119) !important;
+}

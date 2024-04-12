@@ -30982,7 +30982,7 @@ body {
 /**************** breadcrumb ****************/
 .gstore-breadcrumb {
   padding: 115px 0 120px;
-  background-color: rgba(110, 179, 86, 0.13);
+  background-color: rgb(57 34 10);
 }
 .gstore-breadcrumb .bg-shape {
   bottom: -1px;

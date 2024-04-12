@@ -10,8 +10,8 @@
         style="background:
       url('{{ uploadedAsset($campaign->banner) }}')no-repeat center
       center / cover">
-        <img src="{{ staticAsset('frontend/default/assets/img/shapes/bg-shape-6.png') }}" alt="bg-shape"
-            class="position-absolute start-0 z--1 w-100 bg-shape">
+        {{-- <img src="{{ staticAsset('frontend/default/assets/img/shapes/bg-shape-6.png') }}" alt="bg-shape"
+            class="position-absolute start-0 z--1 w-100 bg-shape"> --}}
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
