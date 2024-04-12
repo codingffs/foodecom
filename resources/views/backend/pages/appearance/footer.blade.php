@@ -48,11 +48,11 @@
                                     </select>
                                 </div>
 
-                                <div class="mb-3">
+                                {{-- <div class="mb-3">
                                     <label for="copyright_text" class="form-label">{{ localize('Copyright Text') }}</label>
                                     <input type="hidden" name="types[]" value="copyright_text">
                                     <textarea name="copyright_text" id="copyright_text" class="editor form-control">{{ getSetting('copyright_text') }}</textarea>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
 

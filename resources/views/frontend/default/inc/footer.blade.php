@@ -1,6 +1,6 @@
 <div class="footer-curve position-relative overflow-hidden">
-    <span class="position-absolute section-curve-wrapper top-0 h-100"
-        data-background="{{ staticAsset('frontend/default/assets/img/shapes/section-curve.png') }}"></span>
+    {{-- <span class="position-absolute section-curve-wrapper top-0 h-100"
+        data-background="{{ staticAsset('frontend/default/assets/img/shapes/section-curve.png') }}"></span> --}}
 </div>
 
 <footer class="gshop-footer position-relative pt-8 bg-dark z-1 overflow-hidden">
@@ -59,7 +59,7 @@
             <div class="row align-items-center g-3">
                 <div class="col-lg-4">
                     <div class="copyright-text text-light">
-                        {!! getSetting('copyright_text') !!}
+                        {{-- {!! getSetting('copyright_text') !!} --}}
                     </div>
                 </div>
                 <div class="col-lg-4 d-none d-lg-block">

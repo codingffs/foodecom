@@ -7,7 +7,7 @@
                 </a>
             </div>
             <div class="col-xxl-8 order-1 order-xxl-2">
-                <div
+                {{-- <div
                     class="timing-box d-flex align-items-center justify-content-center justify-content-sm-between rounded-3 flex-wrap gap-3">
                     <h4 class="mb-0">{{ localize('Weekly Best Deals') }}</h4>
                     @php
@@ -40,7 +40,7 @@
                             <span class="gshop-subtitle fs-xxs d-block">{{ localize('Sec') }}</span>
                         </li>
                     </ul>
-                </div>
+                </div> --}}
                 <div class="mt-4">
                     <div class="row g-4">
                         @php

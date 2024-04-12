@@ -61,7 +61,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <div class="mt-5">
+                            {{-- <div class="mt-5">
                                 <span class="fw-bold text-white mb-3 d-block">{{ localize('Find us on') }}:</span>
                                 <div class="social-links d-flex align-items-center gap-2">
                                     <a href="{{ getSetting('facebook_link') }}"><i class="fab fa-facebook-f"></i></a>
@@ -72,10 +72,10 @@
                                     <a href="{{ getSetting('youtube_link') }}" target="_blank"><i
                                             class="fab fa-youtube"></i></a>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
-                    <div class="col-xl-7">
+                    {{-- <div class="col-xl-7">
                         <form class="contact-form ps-4 ps-xl-0 py-8 pe-5 contact-form ps-5 ps-xl-4 py-6 pe-6"
                             action="{{ route('contactUs.store') }}" method="POST" id="contact-form">
                             @csrf
@@ -143,7 +143,7 @@
                             <button type="submit"
                                 class="btn btn-primary btn-md rounded-1 mt-6">{{ localize('Send Message') }}</button>
                         </form>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

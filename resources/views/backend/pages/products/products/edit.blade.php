@@ -71,7 +71,7 @@
                                 </div>
 
                                 @if (env('DEFAULT_LANGUAGE') == $lang_key)
-                                    <div class="mb-4">
+                                    <div class="mb-4 hidden">
                                         <label for="slug" class="form-label">{{ localize('Product Slug') }} <span
                                             class="text-danger">*</span></label>
                                         <input class="form-control" type="text" id="slug"

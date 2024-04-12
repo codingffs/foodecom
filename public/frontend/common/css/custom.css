@@ -369,3 +369,14 @@ html:not([dir="rtl"]) .toast-close-button {
     height: 90px !important;
     width: auto !important;
 }
+
+/* section.pb-120.position-relative.z-1.pt-120 {
+    background-color: #e7e1d8 !important;
+}
+
+section.featured-products.pb-100.position-relative.overflow-hidden.z-1 {
+    background-color: #e7e1d8 !important;
+}
+section.position-relative.banner-section.z-1.overflow-hidden {
+    background-color: #e7e1d8 !important;
+} */
