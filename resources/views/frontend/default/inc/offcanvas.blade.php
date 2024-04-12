@@ -179,7 +179,7 @@
             <a href="mailto:{{ getSetting('topbar_email') }}">{{ getSetting('topbar_email') }}</a>
         </address>
     </div>
-    <div class="offcanvas-contact social-contact mt-4">
+    {{-- <div class="offcanvas-contact social-contact mt-4">
         <a href="{{ getSetting('facebook_link') }}" target="_blank" class="social-btn"><i
                 class="fab fa-facebook-f"></i></a>
         <a href="{{ getSetting('twitter_link') }}" target="_blank" class="social-btn"><i
@@ -188,5 +188,5 @@
                 class="fab fa-linkedin"></i></a>
         <a href="{{ getSetting('youtube_link') }}" target="_blank" class="social-btn"><i
                 class="fab fa-youtube"></i></a>
-    </div>
+    </div> --}}
 </div>

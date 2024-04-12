@@ -32,7 +32,7 @@
                     </div>
                 @endif
 
-                <div class="tt-search-box d-none d-md-block d-lg-block flex-grow-1 me-4">
+                {{-- <div class="tt-search-box d-none d-md-block d-lg-block flex-grow-1 me-4">
                    
                         <div class="input-group">
                             <span class="position-absolute top-50 start-0 translate-middle-y ms-2"> <i
@@ -43,7 +43,7 @@
                             </ul>
                         </div>
                     
-                </div>
+                </div> --}}
                 <ul class="navbar-nav flex-row align-items-center tt-top-navbar">
 
                     <li class="nav-item">

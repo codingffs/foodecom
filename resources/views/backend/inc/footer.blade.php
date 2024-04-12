@@ -7,11 +7,11 @@
                     {!! getSetting('copyright_text') !!}
                 </div>
             </div>
-            <div class="col-md-6">
+            {{-- <div class="col-md-6">
                 <div class="d-flex justify-content-center justify-content-md-end">
                     {{ env('APP_NAME') }}<strong class="ms-2">{{ env('APP_VERSION') }}</strong>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </footer>

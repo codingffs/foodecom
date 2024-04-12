@@ -58,7 +58,7 @@
                                         value="{{ getSetting('topbar_location') }}">
                                 </div>
 
-                                <div class="mb-3">
+                                {{-- <div class="mb-3">
                                     <label for="facebook_link" class="form-label">{{ localize('Facebook Link') }}</label>
                                     <input type="hidden" name="types[]" value="facebook_link">
                                     <input type="url" name="facebook_link" id="facebook_link" class="form-control"
@@ -79,15 +79,15 @@
                                     <input type="url" name="linkedin_link" id="linkedin_link" class="form-control"
                                         placeholder="https://linkedin.com/example"
                                         value="{{ getSetting('linkedin_link') }}">
-                                </div>
+                                </div> --}}
 
-                                <div class="mb-3">
+                                {{-- <div class="mb-3">
                                     <label for="youtube_link" class="form-label">{{ localize('Youtube Link') }}</label>
                                     <input type="hidden" name="types[]" value="youtube_link">
                                     <input type="url" name="youtube_link" id="youtube_link" class="form-control"
                                         placeholder="https://youtube.com/example"
                                         value="{{ getSetting('youtube_link') }}">
-                                </div>
+                                </div> --}}
 
 
                                 <div class="mb-3">

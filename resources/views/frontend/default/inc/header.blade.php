@@ -756,7 +756,7 @@
 
                                     class="icon d-inline-flex rounded-circle justify-content-center align-items-center bg-secondary-light">
 
-                                    <svg width="20" height="24" viewBox="0 0 23 24" fill="none"
+                                    <svg width="20" height="24" viewBox="0 0 23 24" fill="#39220a"
 
                                         xmlns="http://www.w3.org/2000/svg">
 
@@ -764,7 +764,7 @@
 
                                             d="M1.98193 3.44444C1.98193 2.09441 2.97352 1 4.19672 1H7.82812C8.30477 1 8.72795 1.33664 8.87867 1.83572L10.5373 7.3277C10.7116 7.90472 10.475 8.53538 9.98206 8.8074L7.48236 10.1868C8.70297 13.1748 10.884 15.5821 13.5913 16.9292L14.8411 14.1703C15.0876 13.6263 15.659 13.3651 16.1818 13.5575L21.1577 15.3881C21.61 15.5545 21.915 16.0215 21.915 16.5476V20.5556C21.915 21.9056 20.9234 23 19.7002 23H18.5928C9.41887 23 1.98193 14.7919 1.98193 4.66667V3.44444Z"
 
-                                            stroke="#FF7C08" stroke-width="2" stroke-linecap="round"
+                                            stroke="#39220a" stroke-width="2" stroke-linecap="round"
 
                                             stroke-linejoin="round" />
 

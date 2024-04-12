@@ -343,12 +343,12 @@
                         </li>
                     @endcan
 
-                    {{-- @can('header')
+                    @can('header')
                         <li class="{{ areActiveRoutes(['admin.appearance.header'], 'tt-menu-item-active') }}">
                             <a href="{{ route('admin.appearance.header') }}"
                                 class="{{ areActiveRoutes(['admin.appearance.header']) }}">{{ localize('Header') }}</a>
                         </li>
-                    @endcan --}}
+                    @endcan
 
                     @can('footer')
                         <li class="{{ areActiveRoutes(['admin.appearance.footer'], 'tt-menu-item-active') }}">
@@ -368,7 +368,7 @@
     </li>
 
     <!-- Roles & Permission -->
-    @php
+    {{-- @php
         $rolesActiveRoutes = ['admin.roles.index', 'admin.roles.create', 'admin.roles.edit'];
     @endphp
     @can('roles_and_permissions')
@@ -378,7 +378,7 @@
                 <span class="tt-nav-link-text">{{ localize('Roles & Permissions') }}</span>
             </a>
         </li>
-    @endcan
+    @endcan --}}
 
 
     <!-- system settings -->

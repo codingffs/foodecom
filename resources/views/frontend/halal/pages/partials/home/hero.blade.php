@@ -1,11 +1,11 @@
 <section class="gshop-hero meat-hero ptb-120 bg-meat-primary position-relative z-1 overflow-hidden"
     style="background: url({{ staticAsset('frontend/default/assets/img/home-5/bg-shape.png') }})no-repeat center top">
-    <img src="{{ staticAsset('frontend/default/assets/img/shapes/leaf-shadow.png') }}" alt="leaf"
-        class="position-absolute leaf-shape z--1 rounded-circle">
-    <img src="{{ staticAsset('frontend/default/assets/img/shapes/mango.png') }}" alt="mango"
-        class="position-absolute mango z--1" data-parallax='{"y": -120}'>
-    <img src="{{ staticAsset('frontend/default/assets/img/shapes/hero-circle-sm.png') }}" alt="circle"
-        class="position-absolute hero-circle circle-sm z--1">
+    {{-- <img src="{{ staticAsset('frontend/default/assets/img/shapes/leaf-shadow.png') }}" alt="leaf"
+        class="position-absolute leaf-shape z--1 rounded-circle"> --}}
+    {{-- <img src="{{ staticAsset('frontend/default/assets/img/shapes/mango.png') }}" alt="mango"
+        class="position-absolute mango z--1" data-parallax='{"y": -120}'> --}}
+    {{-- <img src="{{ staticAsset('frontend/default/assets/img/shapes/hero-circle-sm.png') }}" alt="circle"
+        class="position-absolute hero-circle circle-sm z--1"> --}}
     <div class="container">
         <div class="row align-items-center justify-content-between">
             <div class="col-xl-5 col-lg-8">

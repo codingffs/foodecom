@@ -1,4 +1,4 @@
-<section class="ptb-120 bg-shade position-relative overflow-hidden z-1 feedback-section">
+{{-- <section class="ptb-120 bg-shade position-relative overflow-hidden z-1 feedback-section">
     <img src="{{ staticAsset('frontend/default/assets/img/shapes/bg-shape-5.png') }}" alt="bg shape"
         class="position-absolute start-0 bottom-0 z--1 w-100">
     <img src="{{ staticAsset('frontend/default/assets/img/shapes/map-bg.png') }}" alt="map"
@@ -12,8 +12,8 @@
     <img src="{{ staticAsset('frontend/default/assets/img/shapes/fd-4.png') }}" alt="shape"
         class="position-absolute z--1 fd-4">
     <img src="{{ staticAsset('frontend/default/assets/img/shapes/fd-5.png') }}" alt="shape"
-        class="position-absolute z--1 fd-5">
-    <div class="container">
+        class="position-absolute z--1 fd-5"> --}}
+    {{-- <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <div class="section-title text-center">
@@ -49,5 +49,5 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </div> --}}
+{{-- </section> --}}

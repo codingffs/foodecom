@@ -89,7 +89,7 @@
                         </div>
                     </form>
 
-                    <div class="row mt-5">
+                    {{-- <div class="row mt-5">
                         <div class="col-12">
                             <div class="card mb-4" id="section-2">
 
@@ -153,9 +153,9 @@
                                 </table>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
-                    <form action="{{ route('admin.timeslot.store') }}" method="POST" enctype="multipart/form-data"
+                    {{-- <form action="{{ route('admin.timeslot.store') }}" method="POST" enctype="multipart/form-data"
                         class="mt-4" id="section-3">
                         @csrf
 
@@ -186,7 +186,7 @@
                                 <i data-feather="save" class="me-1"></i> {{ localize('Save') }}
                             </button>
                         </div>
-                    </form>
+                    </form> --}}
                 </div>
             </div>
         </div>

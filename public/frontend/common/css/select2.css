@@ -139,7 +139,7 @@
     width: auto;
     opacity: 0;
     z-index: 99;
-    background-color: #fff;
+    background-color: #e7e1d8;
     filter: alpha(opacity=0);
 }
 .select2-hidden-accessible {
@@ -155,7 +155,7 @@
     white-space: nowrap !important;
 }
 .select2-container--default .select2-selection--single {
-    background-color: #fff;
+    background-color: #e7e1d8;
     border: 1px solid #aaa;
     border-radius: 4px;
 }
@@ -675,7 +675,7 @@
     box-shadow: none;
 }
 .select2-container--classic .select2-dropdown {
-    background-color: #fff;
+    background-color: #e7e1d8;
     border: 1px solid transparent;
 }
 .select2-container--classic .select2-dropdown--above {
