@@ -138,7 +138,7 @@
     @endcan
 
     <!-- staffs -->
-    @can('staffs')
+    {{-- @can('staffs')
         <li
             class="side-nav-item nav-item {{ areActiveRoutes(['admin.staffs.index', 'admin.staffs.create', 'admin.staffs.edit'], 'tt-menu-item-active') }}">
             <a href="{{ route('admin.staffs.index') }}" class="side-nav-link">
@@ -146,7 +146,7 @@
                 <span class="tt-nav-link-text">{{ localize('Employee Staffs') }}</span>
             </a>
         </li>
-    @endcan
+    @endcan --}}
 
 
 
@@ -189,12 +189,12 @@
                         </li>
                     @endcan
 
-                     @can('deliveryman_payment_history')
+                     {{-- @can('deliveryman_payment_history')
                         <li class="{{ areActiveRoutes(['admin.deliverymen.payout.history'], 'tt-menu-item-active') }}">
                             <a
                                 href="{{ route('admin.deliverymen.payout.history') }}">{{ localize('Payout Histories') }}</a>
                         </li>
-                    @endcan
+                    @endcan --}}
 
                    {{-- @can('deliveryman_config')
                         <li class="{{ areActiveRoutes(['admin.deliveryman.config'], 'tt-menu-item-active') }}">
@@ -317,13 +317,13 @@
                         </li>
                     @endcan
 
-                    @can('product_details_page')
+                    {{-- @can('product_details_page')
                         <li
                             class="{{ areActiveRoutes(['admin.appearance.products.details', 'admin.appearance.products.details.editWidget'], 'tt-menu-item-active') }}">
                             <a href="{{ route('admin.appearance.products.details') }}"
                                 class="{{ areActiveRoutes(['admin.appearance.products.details']) }}">{{ localize('Product Details') }}</a>
                         </li>
-                    @endcan
+                    @endcan --}}
 
                     @can('about_us_page')
                         @php
@@ -343,12 +343,12 @@
                         </li>
                     @endcan
 
-                    @can('header')
+                    {{-- @can('header')
                         <li class="{{ areActiveRoutes(['admin.appearance.header'], 'tt-menu-item-active') }}">
                             <a href="{{ route('admin.appearance.header') }}"
                                 class="{{ areActiveRoutes(['admin.appearance.header']) }}">{{ localize('Header') }}</a>
                         </li>
-                    @endcan
+                    @endcan --}}
 
                     @can('footer')
                         <li class="{{ areActiveRoutes(['admin.appearance.footer'], 'tt-menu-item-active') }}">

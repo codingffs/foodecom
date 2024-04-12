@@ -33,7 +33,7 @@
                     </div>
                 </div>
 
-                <div class="row g-3 mb-3">
+                {{-- <div class="row g-3 mb-3">
                     <div class="col-xl-9">
                         <div class="row g-3">
                             <!-- total sales chart -->
@@ -155,7 +155,7 @@
                         </div>
                         <!-- top selling products -->
                     </div>
-                </div>
+                </div> --}}
 
                 @can('manage_orders')
                     <div class="row g-3 mb-3">

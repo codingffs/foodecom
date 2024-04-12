@@ -18,24 +18,24 @@
     <a href="{{ route('admin.appearance.homepage.bannerOne') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.bannerOne']) }}">{{ localize('Banner Section One') }}</a>
 </li>
-<li>
+{{-- <li>
     <a href="{{ route('admin.appearance.homepage.bestDeals') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.bestDeals']) }}">{{ localize('Weekly Best Deals') }}</a>
-</li>
+</li> --}}
 <li>
     <a href="{{ route('admin.appearance.homepage.bannerTwo') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.bannerTwo']) }}">{{ localize('Banner Section Two') }}</a>
 </li>
-<li>
+{{-- <li>
     <a href="{{ route('admin.appearance.homepage.clientFeedback') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.clientFeedback']) }}">{{ localize('Client Feedback') }}</a>
-</li>
+</li> --}}
 <li>
     <a href="{{ route('admin.appearance.homepage.bestSelling') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.bestSelling']) }}">{{ localize('Best Selling') }}</a>
 </li>
 
-<li>
+{{-- <li>
     <a href="{{ route('admin.appearance.homepage.customProductsSection') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.customProductsSection']) }}">{{ localize('Custom Product Section') }}</a>
-</li>
+</li> --}}

@@ -31,7 +31,7 @@
                             <div class="card-body">
                                 <h5 class="mb-4">{{ localize('Order Information') }}</h5>
 
-                                <div class="mb-3">
+                                {{-- <div class="mb-3">
                                     <label for="enable_scheduled_order"
                                         class="form-label">{{ localize('Enable Scheduled Order') }}</label>
                                     <input type="hidden" name="types[]" value="enable_scheduled_order">
@@ -44,15 +44,15 @@
                                             {{ getSetting('enable_scheduled_order') == '0' ? 'selected' : '' }}>
                                             {{ localize('Disable') }}</option>
                                     </select>
-                                </div>
+                                </div> --}}
 
-                                <div class="mb-3">
+                                {{-- <div class="mb-3">
                                     <label for="allowed_order_days"
                                         class="form-label">{{ localize('Scheduled Order Days') }}</label>
                                     <input type="hidden" name="types[]" value="allowed_order_days">
                                     <input type="number" id="allowed_order_days" name="allowed_order_days"
                                         class="form-control" min="1" value="{{ getSetting('allowed_order_days') }}">
-                                </div>
+                                </div> --}}
 
                                 <div class="mb-3">
                                     <label for="order_code_prefix"

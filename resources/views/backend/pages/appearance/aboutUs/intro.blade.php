@@ -65,7 +65,7 @@
                                     <textarea name="about_intro_vision" id="about_intro_vision" class="form-control">{{ getSetting('about_intro_vision') }}</textarea>
                                 </div>
 
-                                <div class="mb-3">
+                                {{-- <div class="mb-3">
                                     <label for="about_intro_quote" class="form-label">{{ localize('Quote') }}</label>
                                     <input type="hidden" name="types[]" value="about_intro_quote">
                                     <textarea name="about_intro_quote" id="about_intro_quote" class="form-control">{{ getSetting('about_intro_quote') }}</textarea>
@@ -77,7 +77,7 @@
                                     <input type="text" name="about_intro_quote_by" id="text"
                                         placeholder="{{ localize('Type name of the user') }}" class="form-control"
                                         value="{{ getSetting('about_intro_quote_by') }}">
-                                </div>
+                                </div> --}}
 
 
                                 <div class="mb-3">
