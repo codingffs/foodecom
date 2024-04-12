@@ -407,3 +407,11 @@ a.btn.btn-outline-secondary.btn-md.border-secondary.d-block.mt-4.w-100.direct-ad
 .breadcrumb-item+.breadcrumb-item::before {
     color: rgb(245 207 119) !important;
 }
+.border {
+    border: var(--bs-border-width) var(--bs-border-style) #b24e4e !important;
+}
+.vertical-product-card {
+    border: 1px solid #b24e4e !important;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
