@@ -28,7 +28,7 @@
         <div class="container">
             <div class="contact-box rounded-2 bg-white overflow-hidden mt-8">
                 <div class="row g-4">
-                    <div class="col-xl-5">
+                    <div class="col-12">
                         <div class="contact-left-box position-relative overflow-hidden z-1 bg-primary p-6 d-flex flex-column h-100"
                             data-background="{{ staticAsset('frontend/default/assets/img/shapes/circle-half-fill.png') }}">
                             <img src="{{ staticAsset('frontend/default/assets/img/shapes/texture-overlay.png') }}"

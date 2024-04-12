@@ -112,16 +112,16 @@
     <!--brands section end-->
 
     <!--feature section start-->
-    <section class="about-section bg-shade position-relative z-1">
+    {{-- <section class="about-section bg-shade position-relative z-1"> --}}
         {{-- <img src="{{ staticAsset('frontend/default/assets/img/shapes/bg-shape-5.png') }}" alt="bg shape"
             class="position-absolute start-0 bottom-0 z--1 w-100"> --}}
-        <img src="{{ staticAsset('frontend/default/assets/img/shapes/roll-color.png') }}" alt="roll"
+        {{-- <img src="{{ staticAsset('frontend/default/assets/img/shapes/roll-color.png') }}" alt="roll"
             class="position-absolute roll-color z--1" data-parallax='{"y": -50}'>
         <img src="{{ staticAsset('frontend/default/assets/img/shapes/roll-color-curve.png') }}" alt="roll"
             class="position-absolute roll-color-curve z--1" data-parallax='{"y": 50}'>
         <img src="{{ staticAsset('frontend/default/assets/img/shapes/onion-color.png') }}" alt="onion"
-            class="position-absolute onion-color z--1" data-parallax='{"x": -30}'>
-        <div class="container">
+            class="position-absolute onion-color z--1" data-parallax='{"x": -30}'> --}}
+        {{-- <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6">
                     <div class="section-title text-center">
@@ -147,12 +147,12 @@
                 @endforeach
 
             </div>
-        </div>
-    </section>
+        </div> --}}
+    {{-- </section> --}}
     <!--feature section end-->
 
     <!--about us section-->
-    <section class="about-us-section ptb-120">
+    {{-- <section class="about-us-section ptb-120">
         <div class="container">
             <div class="row g-4 align-items-center">
                 <div class="col-xl-5">
@@ -200,6 +200,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--about us section end-->
 @endsection
