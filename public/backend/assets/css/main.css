@@ -3548,12 +3548,12 @@ fieldset:disabled .btn {
     --bs-btn-bg: #39220a;
     --bs-btn-border-color: #39220a;
     --bs-btn-hover-color: #000;
-    --bs-btn-hover-bg: #69c049;
-    --bs-btn-hover-border-color: #60bc3e;
+    --bs-btn-hover-bg: #39220a;
+    --bs-btn-hover-border-color: #39220a;
     --bs-btn-focus-shadow-rgb: 66, 154, 35;
     --bs-btn-active-color: #000;
-    --bs-btn-active-bg: #71c454;
-    --bs-btn-active-border-color: #60bc3e;
+    --bs-btn-active-bg: #39220a;
+    --bs-btn-active-border-color: #39220a;
     --bs-btn-active-shadow: unset;
     --bs-btn-disabled-color: #000;
     --bs-btn-disabled-bg: #39220a;
@@ -33255,7 +33255,7 @@ button:focus {
 }
 ::selection {
     color: #fff;
-    background: #0d6efd;
+    background: #39220a !important;
 }
 body {
     font-family: "Inter", Helvetica;
@@ -34092,8 +34092,8 @@ body {
 .btn-primary:focus,
 .btn-primary.active,
 .btn-primary.show {
-    border-color: #3c8b20;
-    background-color: #3c8b20;
+    border-color: #39220a;
+    background-color: #39220a;
 }
 .btn-accent:hover,
 .btn-accent:active,

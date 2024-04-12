@@ -415,3 +415,7 @@ a.btn.btn-outline-secondary.btn-md.border-secondary.d-block.mt-4.w-100.direct-ad
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+::selection {
+    color: #fff;
+    background: #39220a !important;
+}
