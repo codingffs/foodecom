@@ -14,12 +14,12 @@
                             <div class="tt-page-title">
                                 <h2 class="h5 mb-lg-0">{{ localize('Pages') }}</h2>
                             </div>
-                            <div class="tt-action">
+                            {{-- <div class="tt-action">
                                 @can('add_pages')
                                     <a href="{{ route('admin.pages.create') }}" class="btn btn-primary"><i
                                             data-feather="plus"></i> {{ localize('Add Page') }}</a>
                                 @endcan
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
