@@ -9,11 +9,14 @@
     <!--favicon icon-->
     <link rel="icon" href="{{ uploadedAsset(getSetting('favicon')) }}" type="image/png" sizes="16x16">
 
+    @if (env('APP_ENV') !== 'local')
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    @endif
     <!--title-->
     <title>
         @yield('title')
     </title>
-
+   
     <!--build:css-->
     @include('backend.inc.styles')
     <!-- end build -->
