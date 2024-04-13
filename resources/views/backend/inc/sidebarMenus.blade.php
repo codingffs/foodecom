@@ -361,7 +361,23 @@
         </li>
     @endcanany
 
+            <!-- Contents -->
+            <li class="side-nav-title side-nav-item nav-item mt-3">
+                <span class="tt-nav-title-text">{{ localize('Contents') }}</span>
+            </li>
 
+            <!-- pages -->
+            @php
+                $pagesActiveRoutes = ['admin.pages.index', 'admin.pages.create', 'admin.pages.edit'];
+            @endphp
+            @can('pages')
+                <li class="side-nav-item nav-item {{ areActiveRoutes($pagesActiveRoutes, 'tt-menu-item-active') }}">
+                    <a href="{{ route('admin.pages.index') }}" class="side-nav-link">
+                        <span class="tt-nav-link-icon"> <i data-feather="copy"></i></span>
+                        <span class="tt-nav-link-text">{{ localize('Pages') }}</span>
+                    </a>
+                </li>
+            @endcan
     <!-- Settings -->
     <li class="side-nav-title side-nav-item nav-item mt-3">
         <span class="tt-nav-title-text">{{ localize('Settings') }}</span>
