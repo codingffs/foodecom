@@ -197,6 +197,7 @@
                                     <th data-breakpoints="xs sm">{{ localize('Unit Price') }}</th>
                                     <th data-breakpoints="xs sm">{{ localize('QTY') }}</th>
                                     <th data-breakpoints="xs sm" class="text-end">{{ localize('Total Price') }}</th>
+                                    <th data-breakpoints="xs sm" class="text-end">{{ localize('Additional Info') }}</th>
                                 </tr>
                             </thead>
 
@@ -257,12 +258,13 @@
                                             </span>
 
                                         </td>
-
+                                        <td class="fw-bold">{{ $item->additional_info }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>
                         </table>
 
+                        
                         <!--grand total-->
                         <div class="card-body">
                             <div class="card-footer border-top-0 px-4 py-3 rounded">
