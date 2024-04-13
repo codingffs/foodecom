@@ -258,7 +258,7 @@
                                             </span>
 
                                         </td>
-                                        <td class="fw-bold">{{ $item->additional_info }}</td>
+                                        <td class="fw-bold">{{ $product->additional_info }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>
