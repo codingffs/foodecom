@@ -252,6 +252,7 @@ class OrderController extends Controller
             # payment gateway integration & redirection
 
             $orderGroup->payment_method = $request->payment_method;
+            $orderGroup->additional_info = $request->additional_info;
             $orderGroup->save();
             return $this->order_complete($orderGroup->order_code);
         }
