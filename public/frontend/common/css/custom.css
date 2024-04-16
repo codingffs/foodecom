@@ -424,3 +424,6 @@ a.btn.btn-outline-secondary.btn-md.border-secondary.d-block.mt-4.w-100.direct-ad
     color: #fff;
     background: #39220a !important;
 }
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    color: #39220a !important;
+}
