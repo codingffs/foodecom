@@ -427,3 +427,10 @@ a.btn.btn-outline-secondary.btn-md.border-secondary.d-block.mt-4.w-100.direct-ad
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     color: #39220a !important;
 }
+.table>:not(caption)>*>* {
+    color: var(--bs-table-color-state, var(--bs-table-color-type, #39220a));
+}
+.text-dark {
+    --bs-text-opacity: 1;
+    color: rgb(57 34 10) !important;
+}
