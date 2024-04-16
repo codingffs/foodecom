@@ -386,7 +386,7 @@
 
                                 @endif
 
-                                    <li><a href="{{ route('products.index') }}">{{ localize('Products') }}</a></li>
+                                    <li><a href="{{ route('products.index') }}" class="category-dropdown-btn fw-bold d-none d-sm-inline-block">{{ localize('Products') }}</a></li>
 
 
                                     </li>
@@ -402,7 +402,7 @@
 
                                     <li class="has-submenu">
 
-                                        <a href="javascript:void(0);">{{ localize('Pages') }}<span
+                                        <a href="javascript:void(0);" class="category-dropdown-btn fw-bold d-none d-sm-inline-block">{{ localize('Pages') }}<span
 
                                                 class="ms-1 fs-xs float-end"><i
 
