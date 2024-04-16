@@ -153,12 +153,12 @@
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
                                     <h5 class="mb-4">{{ localize('Price, Sku & Stock') }}</h5>
-                                    <div class="form-check form-switch">
+                                    {{-- <div class="form-check form-switch">
                                         <label class="form-check-label fw-medium text-primary"
                                             for="is_variant">{{ localize('Has Variations?') }}</label>
                                         <input type="checkbox" class="form-check-input" id="is_variant"
                                             onchange="isVariantProduct(this)" name="is_variant">
-                                    </div>
+                                    </div> --}}
                                 </div>
 
                                 <!-- without variation start-->
