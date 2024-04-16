@@ -437,3 +437,12 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .footer-nav li a:hover {
     color: rgb(245 207 119) !important;
 }
+.gshop-navmenu ul li a {
+    color: #39220a !important;
+}
+.category-dropdown-menu li a {
+    color: #39220a !important;
+}
+.text-muted {
+    color: rgb(57 34 10) !important;
+}
