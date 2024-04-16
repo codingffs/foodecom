@@ -439,4 +439,10 @@
             </div>
         </li>
     @endcan
+    <li class="side-nav-item nav-item">
+        <a href="{{ route('logout') }}" class="side-nav-link">
+            <span class="tt-nav-link-icon"> <i data-feather="log-out"></i></span>
+            <span class="tt-nav-link-text">{{ localize('Sign out') }}</span>
+        </a>
+    </li>
 </ul>

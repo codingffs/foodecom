@@ -367,7 +367,7 @@
 @endsection
 
 @section('scripts')
-    <script>
+    {{-- <script>
         "use strict";
         // total earning chart
         var totalSales = {
@@ -563,6 +563,6 @@
             }
         };
         var chart = new ApexCharts(document.querySelector("#thisMonthChart"), options);
-        chart.render();
-    </script>
+        chart.render(); --}}
+    {{-- </script> --}}
 @endsection

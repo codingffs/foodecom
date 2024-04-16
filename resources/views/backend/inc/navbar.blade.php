@@ -155,14 +155,14 @@
                                                 {{ localize('My Account') }}
                                             </a>
                                         </li>
-                                        @can('general_settings')
+                                        {{-- @can('general_settings')
                                             <li class="nav-item">
                                                 <a class="nav-link px-0" href="{{ route('admin.generalSettings') }}">
                                                     <i data-feather="settings" class="me-1 fs-sm"></i>
                                                     {{ localize('Settings') }}
                                                 </a>
                                             </li>
-                                        @endcan
+                                        @endcan --}}
                                         <li class="nav-item">
                                             <a class="nav-link px-0" href="{{ route('logout') }}">
                                                 <i data-feather="log-out"
