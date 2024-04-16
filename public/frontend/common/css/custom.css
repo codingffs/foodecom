@@ -413,7 +413,7 @@ a.btn.btn-outline-secondary.btn-md.border-secondary.d-block.mt-4.w-100.direct-ad
     color: rgb(245 207 119) !important;
 }
 .border {
-    border: var(--bs-border-width) var(--bs-border-style) #b24e4e !important;
+    border: var(--bs-border-width) var(--bs-border-style) #39220a !important;
 }
 .vertical-product-card {
     border: 1px solid #b24e4e !important;
