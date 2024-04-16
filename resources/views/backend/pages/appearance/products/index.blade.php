@@ -53,7 +53,7 @@
                             <div class="col-12">
                                 <div class="mb-4">
                                     <button class="btn btn-primary" type="submit">
-                                        <i data-feather="save" class="me-1"></i> {{ localize('Save') }}
+                                        <i data-feather="save" class="me-1"></i> {{ localize('Save Changes') }}
                                     </button>
                                 </div>
                             </div>
