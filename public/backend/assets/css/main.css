@@ -9839,7 +9839,7 @@ fieldset:disabled .btn {
 }
 .text-primary {
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+    color: #39220a !important;
 }
 .text-accent {
     --bs-text-opacity: 1;
@@ -34733,7 +34733,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .tt-vertical-step-link ul li a {
     position: relative;
     display: block;
-    color: #454f5b;
+    color: #39220a !important;
     padding-left: 26px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -34891,7 +34891,7 @@ table > tbody > tr > td > span.footable-toggle {
 .page-link.page-link-static:hover {
     border-color: rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
-    color: #454f5b;
+    color: #39220a !important;
 }
 .page-link > svg {
     margin-top: -0.125rem;
@@ -35331,7 +35331,7 @@ html:not([dir="rtl"]) .toast-close-button {
     margin-top: 0.375rem;
 }
 .select2-search__field {
-    color: #697a8d;
+    color: #39220a !important;
 }
 .select2-dropdown {
     background: #fff;
@@ -35356,7 +35356,7 @@ html:not([dir="rtl"]) .toast-close-button {
 .select2-container--default
     .select2-results__option--highlighted[aria-selected] {
     background-color: rgba(67, 89, 113, 0.04);
-    color: #697a8d;
+    color: #39220a !important;
 }
 .select2-container--default .select2-selection__placeholder {
     color: #b4bdc6;
@@ -35390,7 +35390,7 @@ html:not([dir="rtl"]) .toast-close-button {
     .select2-selection--single
     .select2-selection__rendered {
     line-height: 2.75rem;
-    color: #454f5b;
+    color: #39220a !important;
     padding-left: 0.875rem;
     padding-right: 2.5rem;
 }
@@ -35410,7 +35410,7 @@ html:not([dir="rtl"]) .toast-close-button {
 .select2-container--default
     .select2-selection--multiple
     .select2-selection__choice {
-    color: #697a8d;
+    color: #39220a !important;
     background-color: rgba(67, 89, 113, 0.08);
     margin-top: 10px;
 }
@@ -36273,7 +36273,7 @@ html:not([dir="rtl"]) .toast-close-button {
     background-color: var(--bs-body-bg);
 }
 .note-frame {
-    color: #454f5b;
+    color: #39220a !important;
 }
 .note-editor.note-airframe .note-editing-area .note-editable,
 .note-editor.note-frame .note-editing-area .note-editable {
@@ -36608,7 +36608,7 @@ button.note-btn.dropdown-toggle:after {
     border-color: rgba(78, 181, 41, 0.35);
 }
 .tt-pos-discount-tab li .nav-link {
-    color: #454f5b;
+    color: #39220a !important;
 }
 .tt-pos-discount-tab li .nav-link.active {
     color: #39220a;
