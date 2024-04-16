@@ -92,6 +92,12 @@
                                         </select>
                                     </div>
                                 </div>
+                                <div class="col-auto col-lg-3">
+                                    <label class="form-label">{{ localize('Additional Info') }}</label>
+                                    <div class="input-group">
+                                        {{  $order->orderGroup->additional_info ?? '' }}
+                                    </div>
+                                </div>
 
 
                                 <div class="col-auto col-lg-3">
@@ -197,7 +203,6 @@
                                     <th data-breakpoints="xs sm">{{ localize('Unit Price') }}</th>
                                     <th data-breakpoints="xs sm">{{ localize('QTY') }}</th>
                                     <th data-breakpoints="xs sm" class="text-end">{{ localize('Total Price') }}</th>
-                                    <th data-breakpoints="xs sm" class="text-end">{{ localize('Additional Info') }}</th>
                                 </tr>
                             </thead>
 
@@ -258,7 +263,6 @@
                                             </span>
 
                                         </td>
-                                        <td class="fw-bold">{{ $product->additional_info }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>

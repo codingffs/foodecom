@@ -60,6 +60,8 @@
 
 
                                 </p>
+                                <p class="mb-0">{{ localize('Additional Info') }}: {{  $order->orderGroup->additional_info ?? '' }}
+                                </p>
                                 @if ($order->shipping_delivery_type == getScheduledDeliveryType())
                                     <p class="mb-0">
                                         {{ localize('Delivery Time') }}:
