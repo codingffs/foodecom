@@ -81,7 +81,7 @@
                                         </td>
                                         <td>
                                             <span class="badge rounded-pill bg-secondary">
-                                                {{ $deliveryman->location->name }}
+                                                {{ isset($deliveryman->location->name) ?  $deliveryman->location->name:''}} 
                                             </span>
 
                                         </td>
