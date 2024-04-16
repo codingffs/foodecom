@@ -58,7 +58,7 @@
                         </li>
                     @endcan
 
-                    @can('variations')
+                    {{-- @can('variations')
                         <li
                             class="{{ areActiveRoutes(
                                 ['admin.variations.index', 'admin.variations.edit', 'admin.variationValues.index', 'admin.variationValues.edit'],
@@ -72,7 +72,7 @@
                                     'admin.variationValues.edit',
                                 ]) }}">{{ localize('All Variations') }}</a>
                         </li>
-                    @endcan
+                    @endcan --}}
                     @can('brands')
                         <li class="{{ areActiveRoutes(['admin.brands.index', 'admin.brands.edit'], 'tt-menu-item-active') }}">
                             <a href="{{ route('admin.brands.index') }}"

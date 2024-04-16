@@ -22,9 +22,9 @@
                                     <p class="mb-5 fs-6">{{ $slider->text }}</p>
 
                                     <div class="hero-btns d-flex align-items-center gap-3 gap-sm-5 flex-wrap">
-                                        <a href="{{ $slider->link }}"
+                                        {{-- <a href="{{ $slider->link }}"
                                             class="btn btn-secondary">{{ localize('Explore Now') }}<span
-                                                class="ms-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                                class="ms-2"><i class="fa-solid fa-arrow-right"></i></span></a> --}}
                                         <a href="{{ route('home.pages.aboutUs') }}"
                                             class="btn btn-primary">{{ localize('About Us') }}<span class="ms-2"><i
                                                     class="fa-solid fa-arrow-right"></i></span></a>
