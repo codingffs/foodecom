@@ -2,7 +2,7 @@
 <header class="tt-top-fixed bg-light-subtle">
     <div class="container-fluid">
         <nav class="navbar navbar-top navbar-expand" id="navbarDefault">
-            <div class="collapse navbar-collapse justify-content-between">
+            <div class="collapse navbar-collapse justify-content-end">
                 <div class="tt-mobile-toggle-brand d-lg-none d-md-none">
                     <a class="tt-toggle-sidebar pe-3" href="#offcanvasLeft" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasLeft">
