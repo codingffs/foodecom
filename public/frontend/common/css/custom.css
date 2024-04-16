@@ -434,3 +434,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     --bs-text-opacity: 1;
     color: rgb(57 34 10) !important;
 }
+.footer-nav li a:hover {
+    color: rgb(245 207 119) !important;
+}
