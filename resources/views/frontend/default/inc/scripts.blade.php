@@ -272,6 +272,32 @@
     }
     cartFunc();
 
+    
+    function directAddToCart(button) {
+    let form = $(button).closest('.direct-add-to-cart-form');
+
+    let data = {
+        _token: form.find('input[name="_token"]').val(),
+        product_variation_id: form.find('input[name="product_variation_id"]').val(),
+        quantity: form.find('input[name="quantity"]').val()
+    };
+
+    $.ajax({
+        type: "POST",
+        url: '{{ route('carts.store') }}',
+        data: data,
+        success: function(data) {
+            // Handle success response
+            updateCarts(data);
+            notifyMe(data.alert, data.message);
+        },
+        error: function(xhr, status, error) {
+            // Handle error response
+            console.error(xhr.responseText);
+        }
+    });
+}
+
     // without variation form submit
     function directAddToCartFormSubmit($this) {
         // add to cart here
