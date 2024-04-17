@@ -46,7 +46,7 @@
                                 </div>
 
 
-                                <div class="mb-3">
+                                {{-- <div class="mb-3">
                                     <label class="form-label">{{ localize('Banner Image') }}</label>
                                     <input type="hidden" name="types[]" value="best_selling_banner">
                                     <div class="tt-image-drop rounded">
@@ -65,16 +65,16 @@
                                         </div>
                                         <!-- choose media -->
                                     </div>
-                                </div>
+                                </div> --}}
 
-                                <div class="mb-3">
+                                {{-- <div class="mb-3">
                                     <label for="best_selling_banner_link"
                                         class="form-label">{{ localize('Banner Link') }}</label>
                                     <input type="hidden" name="types[]" value="best_selling_banner_link">
                                     <input type="url" name="best_selling_banner_link" id="best_selling_banner_link"
                                         placeholder="{{ env('APP_URL') . '/example' }}" class="form-control"
                                         value="{{ getSetting('best_selling_banner_link') }}">
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <!--slider info end-->
