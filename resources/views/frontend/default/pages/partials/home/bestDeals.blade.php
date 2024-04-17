@@ -1,4 +1,4 @@
-<section class="pb-120 position-relative z-1 pt-120">
+{{-- <section class="pb-120 position-relative z-1 pt-120">
     <div class="container">
         <div class="row g-4 align-items-center justify-content-center">
             <div class="col-xxl-4 col-xl-5 order-2 order-xxl-1 d-none d-xl-block d-none-1399">
@@ -6,7 +6,7 @@
                     <img src="{{ uploadedAsset(getSetting('best_deal_banner')) }}" alt="" class="img-fluid">
                 </a>
             </div>
-            <div class="col-xxl-8 order-1 order-xxl-2">
+            <div class="col-xxl-8 order-1 order-xxl-2"> --}}
                 {{-- <div
                     class="timing-box d-flex align-items-center justify-content-center justify-content-sm-between rounded-3 flex-wrap gap-3">
                     <h4 class="mb-0">{{ localize('Weekly Best Deals') }}</h4>
@@ -41,7 +41,7 @@
                         </li>
                     </ul>
                 </div> --}}
-                <div class="mt-4">
+                {{-- <div class="mt-4">
                     <div class="row g-4">
                         @php
                             $weekly_best_deals = getSetting('weekly_best_deals') != null ? json_decode(getSetting('weekly_best_deals')) : [];
@@ -63,4 +63,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
