@@ -455,9 +455,9 @@ span.total-count.position-relative.ps-3.fs-sm.fw-medium.doted-primary {
 section.pt-8.pb-100.bg-white.position-relative.overflow-hidden.z-1.trending-products-area {
     margin-top: -8% !important;
 }
-/* section.position-relative.banner-section.z-1.overflow-hidden {
+section.position-relative.banner-section.z-1.overflow-hidden {
     margin-top: -13% !important;
-} */
+}
 footer.gshop-footer.position-relative.pt-8.bg-dark.z-1.overflow-hidden {
     margin-top: -4% !important;
 }

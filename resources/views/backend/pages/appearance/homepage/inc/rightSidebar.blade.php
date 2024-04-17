@@ -24,7 +24,7 @@
 </li> --}}
 <li>
     <a href="{{ route('admin.appearance.homepage.bannerTwo') }}"
-        class="{{ areActiveRoutes(['admin.appearance.homepage.bannerTwo']) }}">{{ localize('Banner Section One') }}</a>
+        class="{{ areActiveRoutes(['admin.appearance.homepage.bannerTwo']) }}">{{ localize('Banner Section') }}</a>
 </li>
 {{-- <li>
     <a href="{{ route('admin.appearance.homepage.clientFeedback') }}"
