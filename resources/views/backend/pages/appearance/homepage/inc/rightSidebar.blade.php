@@ -14,17 +14,17 @@
     <a href="{{ route('admin.appearance.homepage.topTrendingProducts') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.topTrendingProducts']) }}">{{ localize('Top Trending Products') }}</a>
 </li>
-<li>
+{{-- <li>
     <a href="{{ route('admin.appearance.homepage.bannerOne') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.bannerOne']) }}">{{ localize('Banner Section One') }}</a>
-</li>
+</li> --}}
 {{-- <li>
     <a href="{{ route('admin.appearance.homepage.bestDeals') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.bestDeals']) }}">{{ localize('Weekly Best Deals') }}</a>
 </li> --}}
 <li>
     <a href="{{ route('admin.appearance.homepage.bannerTwo') }}"
-        class="{{ areActiveRoutes(['admin.appearance.homepage.bannerTwo']) }}">{{ localize('Banner Section Two') }}</a>
+        class="{{ areActiveRoutes(['admin.appearance.homepage.bannerTwo']) }}">{{ localize('Banner Section One') }}</a>
 </li>
 {{-- <li>
     <a href="{{ route('admin.appearance.homepage.clientFeedback') }}"

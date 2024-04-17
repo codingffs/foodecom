@@ -416,7 +416,7 @@ a.btn.btn-outline-secondary.btn-md.border-secondary.d-block.mt-4.w-100.direct-ad
     border: var(--bs-border-width) var(--bs-border-style) #39220a !important;
 }
 .vertical-product-card {
-    border: 1px solid #b24e4e !important;
+    border: 1px solid #39220a !important;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
@@ -446,3 +446,22 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .text-muted {
     color: rgb(57 34 10) !important;
 }
+p.mb-0 {
+    color: #39220a !important;
+}
+span.total-count.position-relative.ps-3.fs-sm.fw-medium.doted-primary {
+    color: #39220a !important;
+}
+section.pt-8.pb-100.bg-white.position-relative.overflow-hidden.z-1.trending-products-area {
+    margin-top: -8% !important;
+}
+section.position-relative.banner-section.z-1.overflow-hidden {
+    margin-top: -13% !important;
+}
+footer.gshop-footer.position-relative.pt-8.bg-dark.z-1.overflow-hidden {
+    margin-top: -4% !important;
+}
+section.pt-80.pb-100 {
+    margin-top: -1% !important;
+}
+
