@@ -46,7 +46,7 @@
                                     @if ($order->location_id != null)
                                         <div>
                                             <span class="text-muted">
-                                                <i class="las la-map-marker"></i> {{ optional($order->location)->name }}
+                                                <i class="las la-map-marker"></i> {{ optional($order->location)->address }}
                                             </span>
                                         </div>
                                     @endif
@@ -92,13 +92,14 @@
                                         </select>
                                     </div>
                                 </div>
+                                @if($order->orderGroup->additional_info != null)
                                 <div class="col-auto col-lg-3">
                                     <label class="form-label">{{ localize('Additional Info') }}</label>
                                     <div class="input-group">
                                         {{  $order->orderGroup->additional_info ?? '' }}
                                     </div>
                                 </div>
-
+                                @endif
 
                                 <div class="col-auto col-lg-3">
                                     <label class="form-label">{{ localize('Delivery Status') }}</label>

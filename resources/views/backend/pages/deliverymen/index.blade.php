@@ -60,7 +60,7 @@
                                 <tr>
                                     <th class="text-center">{{ localize('S/L') }}</th>
                                     <th>{{ localize('Name') }}</th>
-                                    <th data-breakpoints="xs sm">{{ localize('Location') }}</th>
+                                    {{-- <th data-breakpoints="xs sm">{{ localize('Location') }}</th> --}}
                                     <th data-breakpoints="xs sm">{{ localize('Email') }}</th>
                                     <th data-breakpoints="xs sm">{{ localize('Phone') }}</th>
                                     {{-- <th data-breakpoints="xs sm">{{ localize('Balance') }}</th> --}}
@@ -79,12 +79,12 @@
                                                 {{ $deliveryman->name }}
                                             </span>
                                         </td>
-                                        <td>
+                                        {{-- <td>
                                             <span class="badge rounded-pill bg-secondary">
-                                                {{ isset($deliveryman->location->name) ?  $deliveryman->location->name:''}} 
+                                                {{ isset($deliveryman->location->address) ?  $deliveryman->location->address:''}} 
                                             </span>
 
-                                        </td>
+                                        </td> --}}
                                         <td>
                                             {{ $deliveryman->email }}
                                         </td>

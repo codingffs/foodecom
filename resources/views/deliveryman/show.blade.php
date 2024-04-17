@@ -42,7 +42,7 @@
                                     @if ($order->location_id != null)
                                         <div>
                                             <span class="text-muted">
-                                                <i class="las la-map-marker"></i> {{ optional($order->location)->name }}
+                                                <i class="las la-map-marker"></i> {{ optional($order->location)->address }}
                                             </span>
                                         </div>
                                     @endif
@@ -78,6 +78,9 @@
                                                 {{ Str::title(Str::replace('_', ' ', $order->shipping_delivery_type)) }}
                                             </span>
                                         </p>
+                                        @if($order->orderGroup->additional_info != null)
+                                        <p class="mb-0">{{ localize('Additional Info') }}: {{  $order->orderGroup->additional_info ?? '' }}</p>
+                                        @endif
                                         @if ($order->shipping_delivery_type == getScheduledDeliveryType())
                                             <p class="mb-0">
                                                 {{ localize('Delivery Time') }}:
