@@ -91,7 +91,7 @@
                                         </div>
                                     @endif
 
-                                    @if (count($locations) > 0)
+                                    {{-- @if (count($locations) > 0)
                                         <div class="col-auto">
                                             <select class="form-select select2" name="location_id"
                                                 data-minimum-results-for-search="Infinity" id="location_id">
@@ -104,7 +104,7 @@
                                                 @endforeach
                                             </select>
                                         </div>
-                                    @endif
+                                    @endif --}}
 
                                     {{-- <div class="col-auto">
                                         <select class="form-select select2" name="is_pos_order"
@@ -139,9 +139,9 @@
                                     <th data-breakpoints="xs sm">{{ localize('Payment') }}</th>
                                     <th data-breakpoints="xs sm">{{ localize('Status') }}</th>
                                     <th data-breakpoints="xs sm">{{ localize('Type') }}</th>
-                                    @if (count($locations) > 0)
+                                    {{-- @if (count($locations) > 0)
                                         <th data-breakpoints="xs sm">{{ localize('Location') }}</th>
-                                    @endif
+                                    @endif --}}
                                     <th data-breakpoints="xs sm" class="text-end">{{ localize('Action') }}</th>
                                 </tr>
                             </thead>
@@ -217,17 +217,17 @@
                                             </span>
                                         </td>
 
-                                        @if (count($locations) > 0)
+                                        {{-- @if (count($locations) > 0)
                                             <td>
                                                 <span class="badge rounded-pill text-capitalize bg-secondary">
                                                     @if ($order->location)
-                                                        {{ $order->location->name }}
+                                                        {{ $order->location->address }}
                                                     @else
                                                         {{ localize('N/A') }}
                                                     @endif
                                                 </span>
                                             </td>
-                                        @endif
+                                        @endif --}}
 
                                         <td class="text-end">
                                             @if (request()->routeIs('admin.deliverymen.cancel-request'))
