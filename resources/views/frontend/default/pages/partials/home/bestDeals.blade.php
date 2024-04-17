@@ -7,17 +7,17 @@
                 </a>
             </div>
             <div class="col-xxl-8 order-1 order-xxl-2">
-                {{-- <div
+                <div
                     class="timing-box d-flex align-items-center justify-content-center justify-content-sm-between rounded-3 flex-wrap gap-3">
                     <h4 class="mb-0">{{ localize('Weekly Best Deals') }}</h4>
-                    @php
+                    {{-- @php
                         $best_deal_end_date = getSetting('best_deal_end_date');
                         if (!is_null($best_deal_end_date)) {
                             $best_deal_end_date = date('m/d/Y H:i:s', strtotime($best_deal_end_date));
                         }
-                    @endphp
+                    @endphp --}}
 
-                    <ul class="timing-countdown countdown-timer d-flex align-items-center gap-2"
+                    {{-- <ul class="timing-countdown countdown-timer d-flex align-items-center gap-2"
                         data-date="{{ $best_deal_end_date }}">
                         <li
                             class="position-relative z-1 d-flex align-items-center justify-content-center flex-column rounded-2">
@@ -39,8 +39,8 @@
                             <h5 class="mb-0 seconds">00</h5>
                             <span class="gshop-subtitle fs-xxs d-block">{{ localize('Sec') }}</span>
                         </li>
-                    </ul>
-                </div> --}}
+                    </ul> --}}
+                </div>
                 <div class="mt-4">
                     <div class="row g-4">
                         @php
