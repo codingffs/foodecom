@@ -28,7 +28,7 @@
                         <div class="card mb-4">
                             <div class="card-body">
 
-                                <div class="mb-3">
+                                {{-- <div class="mb-3">
                                     <label class="form-label">{{ localize('Date Range') }}</label>
                                     @php
                                         $best_deal_end_date = getSetting('best_deal_end_date');
@@ -42,7 +42,7 @@
                                             placeholder="{{ localize('End date') }}" name="best_deal_end_date"
                                             @if ($best_deal_end_date != null) data-date="'{{ $best_deal_end_date }}'" @endif>
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <div class="mb-3">
                                     @php

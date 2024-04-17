@@ -452,3 +452,7 @@ p.mb-0 {
 span.total-count.position-relative.ps-3.fs-sm.fw-medium.doted-primary {
     color: #39220a !important;
 }
+.timing-box {
+    padding: 16px;
+    border: 2px dashed rgb(57 34 10);
+}
