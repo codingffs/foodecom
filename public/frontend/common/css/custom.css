@@ -416,7 +416,7 @@ a.btn.btn-outline-secondary.btn-md.border-secondary.d-block.mt-4.w-100.direct-ad
     border: var(--bs-border-width) var(--bs-border-style) #39220a !important;
 }
 .vertical-product-card {
-    border: 1px solid #39220a !important;
+    border: 1px solid #b24e4e !important;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
@@ -452,4 +452,3 @@ p.mb-0 {
 span.total-count.position-relative.ps-3.fs-sm.fw-medium.doted-primary {
     color: #39220a !important;
 }
-
