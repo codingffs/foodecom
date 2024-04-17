@@ -18,10 +18,10 @@
     <a href="{{ route('admin.appearance.homepage.bannerOne') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.bannerOne']) }}">{{ localize('Banner Section One') }}</a>
 </li> --}}
-{{-- <li>
+<li>
     <a href="{{ route('admin.appearance.homepage.bestDeals') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.bestDeals']) }}">{{ localize('Weekly Best Deals') }}</a>
-</li> --}}
+</li>
 <li>
     <a href="{{ route('admin.appearance.homepage.bannerTwo') }}"
         class="{{ areActiveRoutes(['admin.appearance.homepage.bannerTwo']) }}">{{ localize('Banner Section') }}</a>
