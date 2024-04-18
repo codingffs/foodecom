@@ -57,7 +57,8 @@
                                         @if (getSetting('registration_with') == 'email_and_phone')
                                             {{ localize('Phone') }}<sup class="text-danger">*</sup>
                                         @else
-                                            {{ localize('Phone') }}
+                                            {{ localize('Phone') }}<sup
+                                            class="text-danger">*</sup>
                                         @endif
                                         <small>({{ localize('Enter phone number with country code') }})</small>
                                     </label>

@@ -35,15 +35,16 @@
                                     <input type="hidden" name="login_with" class="login_with" value="email">
 
                                     <span class="login-email @if (old('login_with') == 'phone') d-none @endif">
-                                        <label class="fw-bold text-dark fs-sm mb-1">{{ localize('Email') }}</label>
+                                        <label class="fw-bold text-dark fs-sm mb-1">{{ localize('Email') }}<sup
+                                            class="text-danger">*</sup></label>
                                         <input type="email" id="email" name="email"
                                             placeholder="{{ localize('Enter your email') }}" class="theme-input mb-1"
                                             value="{{ old('email') }}" required>
-                                        <small class="">
+                                        {{-- <small class="">
                                             <a href="javascript:void(0);" class="fs-sm login-with-phone-btn"
                                                 onclick="handleLoginWithPhone()">
                                                 {{ localize('Login with phone?') }}</a>
-                                        </small>
+                                        </small> --}}
                                     </span>
 
                                     <span class="login-phone @if (old('login_with') == 'email' || old('login_with') == '') d-none @endif">
@@ -61,7 +62,8 @@
                             </div>
                             <div class="col-sm-12">
                                 <div class="input-field check-password">
-                                    <label class="fw-bold text-dark fs-sm mb-1">{{ localize('Password') }}</label>
+                                    <label class="fw-bold text-dark fs-sm mb-1">{{ localize('Password') }}<sup
+                                        class="text-danger">*</sup></label>
                                     <div class="check-password">
                                         <input type="password" name="password" id="password"
                                             placeholder="{{ localize('Password') }}" class="theme-input" required>

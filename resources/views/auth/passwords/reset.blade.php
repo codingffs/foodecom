@@ -34,7 +34,8 @@
                         <div class="row g-3">
                             <div class="col-sm-12">
                                 <div class="input-field">
-                                    <label class="fw-bold text-dark fs-sm mb-1">{{ localize('Email') }}</label>
+                                    <label class="fw-bold text-dark fs-sm mb-1">{{ localize('Email') }}<sup
+                                        class="text-danger">*</sup></label>
                                     <input type="email" id="email" name="email"
                                         placeholder="{{ localize('Enter your email') }}"
                                         class="theme-input @error('email') is-invalid @enderror"
