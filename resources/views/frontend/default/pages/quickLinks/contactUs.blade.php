@@ -34,7 +34,7 @@
                             <img src="{{ staticAsset('frontend/default/assets/img/shapes/texture-overlay.png') }}"
                                 alt="texture" class="position-absolute w-100 h-100 start-0 top-0 z--1">
                             <h3 class="text-white mb-3">{{ localize('Contact Details') }}</h3>
-                            <p class="fs-sm text-white"><strong>{{ localize('Office Address') }}:
+                            <p class="fs-sm text-white"><strong>{{ localize('Address') }}:
                                 </strong>{{ getSetting('topbar_location') }}
                             </p>
                             <span class="spacer my-5"></span>

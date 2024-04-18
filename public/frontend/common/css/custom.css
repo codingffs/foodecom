@@ -446,7 +446,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .text-muted {
     color: rgb(57 34 10) !important;
 }
-p.mb-0 {
+p.our_featured_product {
     color: #39220a !important;
 }
 span.total-count.position-relative.ps-3.fs-sm.fw-medium.doted-primary {
