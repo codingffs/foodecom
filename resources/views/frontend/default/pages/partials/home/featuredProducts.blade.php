@@ -8,7 +8,7 @@
             <div class="col-xl-6">
                 <div class="section-title text-center mb-4">
                     <h3 class="mb-2">{{ localize('Our Featured Products') }}</h3>
-                    <p class="mb-0">{{ getSetting('featured_sub_title') }}</p>
+                    <p class="mb-0 our_featured_product">{{ getSetting('featured_sub_title') }}</p>
                 </div>
             </div>
         </div>
