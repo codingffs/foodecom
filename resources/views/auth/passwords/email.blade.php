@@ -37,17 +37,18 @@
                                 <div class="input-field">
 
                                     <span class="reset-email @if (old('reset_with') == 'phone') d-none @endif">
-                                        <label class="fw-bold text-dark fs-sm mb-1">{{ localize('Email') }}</label>
+                                        <label class="fw-bold text-dark fs-sm mb-1">{{ localize('Email') }}<sup
+                                            class="text-danger">*</sup></label>
                                         <input type="email" id="email" name="email"
                                             placeholder="{{ localize('Enter your email') }}"
                                             class="theme-input mb-1 @error('email') is-invalid @enderror"
                                             value="{{ old('email') }}" required>
 
-                                        <small class="">
+                                        {{-- <small class="">
                                             <a href="javascript:void(0);" class="fs-sm reset-with-phone-btn"
                                                 onclick="handleResetWithPhone()">
                                                 {{ localize('Reset with phone?') }}</a>
-                                        </small>
+                                        </small> --}}
                                     </span>
 
                                     @error('email')
