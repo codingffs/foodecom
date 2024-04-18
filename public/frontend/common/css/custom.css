@@ -28,8 +28,9 @@
     width: 100%;
     padding: 16px 24px;
     border-radius: 4px;
-    border: 1px solid #e4e4e4;
+    border: 1px solid #1c1105;
     outline: 0;
+    background-color: #e7e1d8 !important;
 }
 .label-input-field label {
     z-index: 1;
@@ -41,7 +42,7 @@
     display: block;
     padding: 14px 24px;
     border-radius: 4px;
-    border: 1px solid #e4e4e4;
+    border: 1px solid #1c1105;
 }
 
 .select2-container--default
@@ -454,5 +455,16 @@ span.total-count.position-relative.ps-3.fs-sm.fw-medium.doted-primary {
 }
 .timing-box {
     padding: 16px;
+    border: 2px dashed rgb(57 34 10);
+}
+.offcanvas_menu .offcanvas-close {
+    color: #39220a !important;
+}
+.label-input-field label {
+    border: 1px solid #1c1105;
+    background-color: #e7e1d8;
+}
+.search-form input {
+    background: #e7e1d8 !important;
     border: 2px dashed rgb(57 34 10);
 }
