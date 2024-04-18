@@ -66,7 +66,7 @@
             </li>
         @endif
 
-        <li>
+        {{-- <li>
             <a href="{{ route('customers.walletHistory') }}"
                 class="{{ areActiveRoutes(['customers.walletHistory'], 'active') }}">
                 <span class="me-2">
@@ -81,7 +81,7 @@
                 </span>
                 {{ localize('Wallet History') }}
             </a>
-        </li>
+        </li> --}}
 
 
         @if (getSetting('enable_refund_system') == 1)

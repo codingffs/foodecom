@@ -45,7 +45,7 @@
                                         <i class="fa-brands fa-whatsapp"></i>
                                     </span>
                                     <div class="info">
-                                        <span class="fw-medium text-white fs-xs">{{ localize('Emergency Call') }}</span>
+                                        <span class="fw-medium text-white fs-xs">{{ localize('Mobile Number') }}</span>
                                         <h5 class="mb-0 mt-1 text-white">{{ getSetting('navbar_contact_number') }}</h5>
                                     </div>
                                 </li>
