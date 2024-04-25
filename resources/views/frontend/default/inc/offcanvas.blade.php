@@ -59,12 +59,12 @@
                     <li>
                         <a href="{{ route('products.index') }}">{{ localize('Products') }}</a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="{{ route('home.campaigns') }}">{{ localize('Campaigns') }}</a>
                     </li>
                     <li>
                         <a href="{{ route('home.coupons') }}">{{ localize('Coupons') }}</a>
-                    </li>
+                    </li> --}}
                 @endif
 
 
@@ -95,7 +95,7 @@
                     </li>
                 @endif
 
-                @php
+                {{-- @php
                     if (Session::has('locale')) {
                         $locale = Session::get('locale', Config::get('app.locale'));
                     } else {
@@ -106,9 +106,9 @@
                     if ($currentLanguage == null) {
                         $currentLanguage = \App\Models\Language::where('code', 'en')->first();
                     }
-                @endphp
+                @endphp --}}
 
-                <li class="has-submenu">
+                {{-- <li class="has-submenu">
                     <a href="javascript:void(0)">{{ $currentLanguage->name }}<span class="ms-1 fs-xs float-end"><i
                                 class="fa-solid fa-angle-right"></i></span></a>
                     <ul>
@@ -122,11 +122,11 @@
                         @endforeach
 
                     </ul>
-                </li>
+                </li> --}}
 
 
 
-                @php
+                {{-- @php
                     if (Session::has('currency_code')) {
                         $currency_code = Session::get('currency_code', Config::get('app.currency_code'));
                     } else {
@@ -137,9 +137,9 @@
                     if ($currentCurrency == null) {
                         $currentCurrency = \App\Models\Currency::where('code', 'usd')->first();
                     }
-                @endphp
+                @endphp --}}
 
-                <li class="has-submenu">
+                {{-- <li class="has-submenu">
                     <a href="javascript:void(0)" class="text-uppercase">{{ $currentCurrency->symbol }}
                         {{ $currentCurrency->code }}<span class="ms-1 fs-xs float-end"><i
                                 class="fa-solid fa-angle-right"></i></span></a>
@@ -154,7 +154,7 @@
                         @endforeach
 
                     </ul>
-                </li>
+                </li> --}}
 
                 @auth
                     <li>
